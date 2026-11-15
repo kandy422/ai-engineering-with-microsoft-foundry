@@ -45,7 +45,7 @@ For the final project, start with [Module 16](modules/module-16/README.md) and i
 
 ## Videos
 
-The videos are currently private for owner review. Their YouTube descriptions link to this package. Public video access will be announced when the course is released.
+**[Watch the complete course on YouTube](https://www.youtube.com/playlist?list=PLLMgRqbMovSI)** — all 111 lessons are public and arranged in curriculum order. Start with the series overview and follow the module guides alongside the videos. Each video description links to the learner download and its module guide.
 
 ## Package integrity
 
