@@ -1,0 +1,39 @@
+{
+  "search": [
+    {
+      "id": "RET-30",
+      "content": "An unopened item may be sent back within thirty days of purchase. Returns of opened items are outside this policy.",
+      "answer": "Unopened items can be returned within 30 days.",
+      "factKey": "unopened-return-window",
+      "factValue": "30-days",
+      "isActive": true
+    },
+    {
+      "id": "WAR-A",
+      "content": "The warranty lasts one year from purchase.",
+      "answer": "The warranty lasts one year.",
+      "factKey": "standard-warranty-duration",
+      "factValue": "1-year",
+      "isActive": true
+    },
+    {
+      "id": "WAR-B",
+      "content": "The warranty lasts two years from purchase.",
+      "answer": "The warranty lasts two years.",
+      "factKey": "standard-warranty-duration",
+      "factValue": "2-years",
+      "isActive": true
+    }
+  ],
+  "storage": [
+    {
+      "rowKey": "order:ORD-1042",
+      "Status": "in_transit"
+    },
+    {
+      "rowKey": "ticket:T-17",
+      "CallbackRequested": false
+    }
+  ],
+  "scope": "Populate tenantId and customerScope from the enrolled test customer A. Encode vectors from content with the configured course embedding model. Seed only the dedicated lab index and table."
+}

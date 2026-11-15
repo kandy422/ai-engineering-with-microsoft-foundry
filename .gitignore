@@ -1,0 +1,14 @@
+# Local credentials and generated outputs
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+**/bin/
+**/obj/
+**/__pycache__/
+**/node_modules/
+**/.venv/
+.DS_Store
+Thumbs.db

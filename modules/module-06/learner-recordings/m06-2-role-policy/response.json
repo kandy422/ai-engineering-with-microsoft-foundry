@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "Sorry for the delay — I understand this is frustrating. I can help track down your parcel for order ORD-1042 right away. Please confirm whether the shipping address on your order is still correct, and tell me if you received any shipping updates or a tracking number. Once I have that, I’ll contact the carrier and provide an update on the parcel’s status and the next steps to resolve this.",
+        "refusal": null
+      }
+    }
+  ]
+}

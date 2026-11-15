@@ -1,0 +1,4 @@
+
+pair
+What is my delivery status? => Delivery status
+Any news on my parcel? => Review

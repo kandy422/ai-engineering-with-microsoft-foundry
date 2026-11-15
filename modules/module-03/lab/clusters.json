@@ -1,0 +1,12 @@
+[
+  "invoice billing copy",
+  "billing invoice correction",
+  "billing invoice duplicate",
+  "password login reset",
+  "login password expired",
+  "login password locked",
+  "checkout payment timeout",
+  "checkout payment declined",
+  "payment checkout unavailable",
+  "password reset before checkout"
+]

@@ -1,0 +1,12 @@
+{
+  "scope": "lab canonical order and local policy fixture",
+  "agreement": "eligible-for-policy-reply",
+  "conflict": "clarify",
+  "reply": "DAMAGED-01|submit a photo of the visible damage and keep the packaging for agent review.",
+  "evidence": {
+    "voice": "agreement.response.json",
+    "changedVoice": "conflict.response.json",
+    "receipt": "receipt.result.response.json",
+    "policy": "DAMAGED-01"
+  }
+}

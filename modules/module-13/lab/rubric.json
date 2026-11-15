@@ -1,0 +1,6 @@
+{
+  "version": "support-rubric/1",
+  "minQualityRate": 0.95,
+  "maxP95Milliseconds": 2000,
+  "maxMeanCostUsd": 0.02
+}

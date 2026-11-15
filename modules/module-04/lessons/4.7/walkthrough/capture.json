@@ -1,0 +1,25 @@
+{
+  "lesson": "4.7",
+  "source": "lessons/4.7/walkthrough/walkthrough.py",
+  "sourceSha256": "ef7cbe86d6f47b1e9cb88e55038fb5b3fe99f561c354aac65d492f13eeb39bc4",
+  "runtime": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "method": "Local subprocess capture. The lesson reconstructs the recorded commands and renders captured stdout verbatim.",
+  "runs": [
+    {
+      "command": "py -3.12 lessons/4.7/walkthrough/walkthrough.py 0",
+      "argv": [
+        "0"
+      ],
+      "stdout": "causal=False  inspecting position 2 (my)\nfuture (0, 2) earlier output [2.523, 8.903]\nfuture weights [0.254, 0.665]\nfuture (2, 0) earlier output [7.471, 2.879]\nfuture weights [0.481, 0.212]",
+      "exitCode": 0
+    },
+    {
+      "command": "py -3.12 lessons/4.7/walkthrough/walkthrough.py 1",
+      "argv": [
+        "1"
+      ],
+      "stdout": "causal=True  inspecting position 2 (my)\nfuture (0, 2) earlier output [3.57, 3.642]\nfuture weights [0.0, 0.0]\nfuture (2, 0) earlier output [3.57, 3.642]\nfuture weights [0.0, 0.0]",
+      "exitCode": 0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source": "../../coordination/cloud-lab/recordings/m09-embed-02",
+  "sha256": {
+    "request.json": "278b8da6ff8bde0c2454b1ff04bdb87bd2fcf5e9f677f7437aecc08a42256b95",
+    "response.json": "550faefbd01e116ee93b2af23f257955c149d7e70614460ca68bcb311e1d76ad",
+    "receipt.json": "a5f48911152af28a55089456e096fc3d8d026b264e3267e6eb7d8262ca699902"
+  },
+  "inputIds": [
+    "standard-v1",
+    "recall-v1",
+    "tablets-v1",
+    "partner-v1",
+    "billing-v1",
+    "rtn-7041-v1",
+    "rtn-7401-v1",
+    "standard-v2",
+    "q-exact",
+    "q-paraphrase",
+    "q-ambiguous",
+    "q-scope",
+    "q-eval-window",
+    "q-eval-recall",
+    "q-eval-billing",
+    "q-version"
+  ],
+  "requestId": "3a3af067-95f4-4319-84ca-dea5e1634400",
+  "usage": {
+    "prompt_tokens": 189,
+    "total_tokens": 189
+  }
+}

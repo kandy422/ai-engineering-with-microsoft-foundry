@@ -1,0 +1,18 @@
+{
+  "apiVersion": "2025-09-01",
+  "deployment": "course-embed",
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "vectorField": "contentVector",
+  "metric": "cosine",
+  "trustedFields": [
+    "tenantId",
+    "customerId",
+    "product"
+  ],
+  "access": "All three filter values must match exactly. Resolve tenant and customer from authenticated claims and server-side entitlement mapping, and validate the requested product against the same entitlement. Fail closed when any value is missing. Search RBAC controls the caller's access to the index; the server constructs and enforces the document filter.",
+  "odata": "tenantId eq '<trusted tenant>' and customerId eq '<trusted customer>' and product eq '<authorized product>' and isCurrent eq true",
+  "filterMode": "preFilter",
+  "select": "id,sourceId,policyVersion,tenantId,customerId,product,isCurrent,content",
+  "provenance": "Module 09 Phase A m09-embed-02 recording. Index and query use vectors for exactly the recorded text. Embed changed text against the same deployment before using it."
+}

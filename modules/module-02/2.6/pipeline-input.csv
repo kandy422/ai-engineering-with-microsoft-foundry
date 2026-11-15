@@ -1,0 +1,7 @@
+ticket_id,conversation_id,received_at,channel,subject,routed_queue
+P01,C01,2026-01-02,email,Refund pending,billing
+P02,C01,2026-01-03,email,Refund update,billing
+P03,C02,2026-01-05,chat,Password reset,access
+P04,C03,2026-01-10,email,Export failed,technical
+P05,C04,2026-01-14,portal,Refund status,billing
+P06,C01,2026-01-22,voice,Unlock account,access

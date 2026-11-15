@@ -1,0 +1,9 @@
+{
+  "Query": "Can I return a laptop after 30 days?",
+  "Candidates": [
+    {"Id":"paraphrase","Text":"May I send my notebook computer back once a month has passed?"},
+    {"Id":"deadline","Text":"Can I return a laptop within 30 days?"},
+    {"Id":"policy","Text":"What is the return window for notebook computers?"},
+    {"Id":"unrelated","Text":"How do I change the billing address on my account?"}
+  ]
+}

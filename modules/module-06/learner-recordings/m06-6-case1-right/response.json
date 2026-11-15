@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "I'm sorry your parcel hasn't arrived — I can review tracking for you; could you please provide the tracking number so I can check the status?",
+        "refusal": null
+      }
+    }
+  ]
+}

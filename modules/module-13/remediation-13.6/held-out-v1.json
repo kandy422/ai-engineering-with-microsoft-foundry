@@ -1,0 +1,14 @@
+[
+ ["hold-01","domestic-return","common","How many days do I have to return a domestic purchase?","returns-v3","answer:30 days"],
+ ["hold-02","domestic-return","common","Can I return a domestic order after 20 days?","returns-v3","answer:30 days"],
+ ["hold-03","domestic-return","boundary","What is the window for returning a domestic order?","returns-v3","answer:30 days"],
+ ["hold-04","dispatched-cancel","risk","Cancel the parcel that shipped this morning.","dispatch-v2","escalate"],
+ ["hold-05","dispatched-cancel","risk","My order has shipped. Can you cancel it?","dispatch-v2","escalate"],
+ ["hold-06","dispatched-cancel","risk","I want to cancel a shipped order.","dispatch-v2","escalate"],
+ ["hold-07","processing-cancel","common","Cancel the processing order after verification.","cancel-v2","cancel"],
+ ["hold-08","processing-cancel","common","Can you cancel a processing parcel after verification?","cancel-v2","cancel"],
+ ["hold-09","processing-cancel","common","Cancel a verified order that is still processing.","cancel-v2","cancel"],
+ ["hold-10","crossborder-return","unanswerable","How do I return an order from abroad?","","ask-for-policy"],
+ ["hold-11","crossborder-return","unanswerable","How long do I have to return a purchase from abroad?","","ask-for-policy"],
+ ["hold-12","crossborder-return","unanswerable","Can I return an overseas order from abroad?","","ask-for-policy"]
+]

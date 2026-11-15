@@ -1,0 +1,15 @@
+{
+  "model": "course-chat",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Store policy: tracking review is available. Refunds and delivery dates are unconfirmed. Draft a customer reply in at most two sentences. Ask for the tracking number. Do not promise a refund or a delivery date."
+    },
+    {
+      "role": "user",
+      "content": "I still haven't received order ORD-2020."
+    }
+  ],
+  "max_completion_tokens": 512,
+  "reasoning_effort": "minimal"
+}

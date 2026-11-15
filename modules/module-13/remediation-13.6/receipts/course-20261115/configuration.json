@@ -1,0 +1,28 @@
+{
+  "endpoint": "https://course-project.invalid",
+  "judge": "course-chat",
+  "batch": "course-20261115",
+  "manifest": {
+    "referenceSha256": "cb40c80965922c1b5f64ab1c4295b0bfe6f1560d1339092258cd31467d45af52",
+    "datasets": {
+      "keyword": {
+        "file": "foundry-keyword-v1.jsonl",
+        "sha256": "a8c494e33c476668b17409ca26766248a31d8f616d55149daa6410c86902a60f",
+        "rows": 12,
+        "localMismatches": [
+          "hold-05",
+          "hold-06",
+          "hold-10",
+          "hold-11",
+          "hold-12"
+        ]
+      },
+      "scoped-keyword": {
+        "file": "foundry-scoped-keyword-v1.jsonl",
+        "sha256": "8a1428b442626fefe6a62f85987e3c76dd25b877a9c1d13ee1cc74c2deeca5bc",
+        "rows": 12,
+        "localMismatches": []
+      }
+    }
+  }
+}

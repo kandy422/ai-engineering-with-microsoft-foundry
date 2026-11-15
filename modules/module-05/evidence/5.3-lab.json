@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    "check the records",
+    "ask for the order ID"
+  ],
+  "initial": [
+    0,
+    0
+  ],
+  "pretrained": [
+    0.20393068417384652,
+    -0.20393068417384647
+  ],
+  "tuned": [
+    -0.09635679802911795,
+    0.09635679802911801
+  ],
+  "postTrained": [
+    -0.32234187580089346,
+    0.3223418758008936
+  ],
+  "inference": {
+    "prefix": "To help, first",
+    "response": [
+      0.34418853974470104,
+      0.655811460255299
+    ],
+    "selected": "ask for the order ID",
+    "weightsUnchanged": true
+  }
+}

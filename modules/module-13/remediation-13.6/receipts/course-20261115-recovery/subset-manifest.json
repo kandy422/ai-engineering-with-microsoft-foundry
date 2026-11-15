@@ -1,0 +1,254 @@
+[
+  {
+    "caseId": "hold-07",
+    "variant": "keyword",
+    "version": "keyword",
+    "sourceDatasetSha256": "a8c494e33c476668b17409ca26766248a31d8f616d55149daa6410c86902a60f",
+    "rowSha256": "24e058479cc7a4d47dedc1764f9c6eceabf493940615ea0d6ca3721bf78baf7c",
+    "originalRunId": "evalrun_4470d3a4c0a147d39eb759d80352e88e",
+    "originalItemId": "7",
+    "originalJudge": {
+      "type": "score_model",
+      "name": "policy-outcome-judge",
+      "metric": "policy-outcome-judge",
+      "score": null,
+      "label": null,
+      "reason": null,
+      "threshold": 1,
+      "passed": null,
+      "status": "error",
+      "sample": {
+        "input": [],
+        "output": [
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "finish_reason": "",
+        "model": "",
+        "usage": null,
+        "error": {
+          "code": "429",
+          "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4955f881919d039dfac9cd173b/evalrun_6af92c4b48708191a4338da408404cf8, eval_6af92c4c5c948191a7ee743b173de175/evalrun_6af92c4e6b1c8191ad43f486f006a081; item 6)"
+        }
+      }
+    }
+  },
+  {
+    "caseId": "hold-02",
+    "variant": "scoped-keyword",
+    "version": "scoped-keyword",
+    "sourceDatasetSha256": "8a1428b442626fefe6a62f85987e3c76dd25b877a9c1d13ee1cc74c2deeca5bc",
+    "rowSha256": "0682dd01d5d03a25d35d10804e3f940e528b113a4660bf853ad91df0dd057639",
+    "originalRunId": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "originalItemId": "2",
+    "originalJudge": {
+      "type": "score_model",
+      "name": "policy-outcome-judge",
+      "metric": "policy-outcome-judge",
+      "score": null,
+      "label": null,
+      "reason": null,
+      "threshold": 1,
+      "passed": null,
+      "status": "error",
+      "sample": {
+        "input": [],
+        "output": [
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "finish_reason": "",
+        "model": "",
+        "usage": null,
+        "error": {
+          "code": "429",
+          "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 1)"
+        }
+      }
+    }
+  },
+  {
+    "caseId": "hold-04",
+    "variant": "scoped-keyword",
+    "version": "scoped-keyword",
+    "sourceDatasetSha256": "8a1428b442626fefe6a62f85987e3c76dd25b877a9c1d13ee1cc74c2deeca5bc",
+    "rowSha256": "f3d8c036e034d46d7c89db1908a06d5ffa876aa4c8f79679bf242a1f54c68a82",
+    "originalRunId": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "originalItemId": "4",
+    "originalJudge": {
+      "type": "score_model",
+      "name": "policy-outcome-judge",
+      "metric": "policy-outcome-judge",
+      "score": null,
+      "label": null,
+      "reason": null,
+      "threshold": 1,
+      "passed": null,
+      "status": "error",
+      "sample": {
+        "input": [],
+        "output": [
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "finish_reason": "",
+        "model": "",
+        "usage": null,
+        "error": {
+          "code": "429",
+          "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 3)"
+        }
+      }
+    }
+  },
+  {
+    "caseId": "hold-05",
+    "variant": "scoped-keyword",
+    "version": "scoped-keyword",
+    "sourceDatasetSha256": "8a1428b442626fefe6a62f85987e3c76dd25b877a9c1d13ee1cc74c2deeca5bc",
+    "rowSha256": "4510fed191948a4248a59107c9f53a77cc1feaea8e498ccbf2809ce9f25fe907",
+    "originalRunId": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "originalItemId": "5",
+    "originalJudge": {
+      "type": "score_model",
+      "name": "policy-outcome-judge",
+      "metric": "policy-outcome-judge",
+      "score": null,
+      "label": null,
+      "reason": null,
+      "threshold": 1,
+      "passed": null,
+      "status": "error",
+      "sample": {
+        "input": [],
+        "output": [
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "finish_reason": "",
+        "model": "",
+        "usage": null,
+        "error": {
+          "code": "429",
+          "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 4)"
+        }
+      }
+    }
+  },
+  {
+    "caseId": "hold-07",
+    "variant": "scoped-keyword",
+    "version": "scoped-keyword",
+    "sourceDatasetSha256": "8a1428b442626fefe6a62f85987e3c76dd25b877a9c1d13ee1cc74c2deeca5bc",
+    "rowSha256": "dbdaf38ac5eb02f98a0f2bea0ddc8370bd1297c64f4bdd58faf842af23ffadae",
+    "originalRunId": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "originalItemId": "7",
+    "originalJudge": {
+      "type": "score_model",
+      "name": "policy-outcome-judge",
+      "metric": "policy-outcome-judge",
+      "score": null,
+      "label": null,
+      "reason": null,
+      "threshold": 1,
+      "passed": null,
+      "status": "error",
+      "sample": {
+        "input": [],
+        "output": [
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "finish_reason": "",
+        "model": "",
+        "usage": null,
+        "error": {
+          "code": "429",
+          "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 6)"
+        }
+      }
+    }
+  },
+  {
+    "caseId": "hold-09",
+    "variant": "scoped-keyword",
+    "version": "scoped-keyword",
+    "sourceDatasetSha256": "8a1428b442626fefe6a62f85987e3c76dd25b877a9c1d13ee1cc74c2deeca5bc",
+    "rowSha256": "275c655886ef97f86113bd620cca2f1db1d308f41f638237543021067604b6dc",
+    "originalRunId": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "originalItemId": "9",
+    "originalJudge": {
+      "type": "score_model",
+      "name": "policy-outcome-judge",
+      "metric": "policy-outcome-judge",
+      "score": null,
+      "label": null,
+      "reason": null,
+      "threshold": 1,
+      "passed": null,
+      "status": "error",
+      "sample": {
+        "input": [],
+        "output": [
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "finish_reason": "",
+        "model": "",
+        "usage": null,
+        "error": {
+          "code": "429",
+          "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 8)"
+        }
+      }
+    }
+  },
+  {
+    "caseId": "hold-12",
+    "variant": "scoped-keyword",
+    "version": "scoped-keyword",
+    "sourceDatasetSha256": "8a1428b442626fefe6a62f85987e3c76dd25b877a9c1d13ee1cc74c2deeca5bc",
+    "rowSha256": "820061c2770472d61ad4469eb348ccb0445556f7fff96f06492fb6560c4355ad",
+    "originalRunId": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "originalItemId": "12",
+    "originalJudge": {
+      "type": "score_model",
+      "name": "policy-outcome-judge",
+      "metric": "policy-outcome-judge",
+      "score": null,
+      "label": null,
+      "reason": null,
+      "threshold": 1,
+      "passed": null,
+      "status": "error",
+      "sample": {
+        "input": [],
+        "output": [
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "finish_reason": "",
+        "model": "",
+        "usage": null,
+        "error": {
+          "code": "429",
+          "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 11)"
+        }
+      }
+    }
+  }
+]

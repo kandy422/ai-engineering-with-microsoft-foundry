@@ -1,0 +1,8 @@
+
+privacy
+Telemetry => {"outcome":"resolved"}
+Private values in telemetry => Absent
+
+deletion
+Remaining store + cache entries => 0
+Entries after repeat => 0

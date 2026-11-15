@@ -1,0 +1,14 @@
+:root { color-scheme: dark; color: #e8effb; background: #0c1325; font: 1rem system-ui, sans-serif; }
+body { margin: 0; }
+main { width: min(42rem, 100% - 2rem); margin: 2rem auto; }
+h1 { margin-bottom: .25rem; }
+h2 { font-size: 1.25rem; margin-top: 0; }
+fieldset { min-width: 0; margin: 1.5rem 0; padding: 1rem; border: 1px solid #445470; border-radius: .5rem; }
+form + form { border-top: 1px solid #445470; padding-top: 1rem; margin-top: 1rem; }
+label, output { display: block; }
+input, textarea, button { font: inherit; margin-top: .4rem; padding: .55rem .75rem; border: 1px solid #6c809e; border-radius: .3rem; }
+textarea { display: block; width: 100%; box-sizing: border-box; }
+button { background: #a6eeff; color: #0c1325; font-weight: 650; }
+button:disabled { opacity: .65; }
+:focus-visible { outline: 3px solid #b8a3ff; outline-offset: 3px; }
+output { margin-top: .75rem; white-space: pre-wrap; overflow-wrap: anywhere; }

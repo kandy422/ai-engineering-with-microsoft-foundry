@@ -1,0 +1,6 @@
+[
+  {"id":"pol-01","query":"How long can I return a domestic order?","response":"You have 60 days to return your domestic order.","evidence":"Domestic returns are accepted within 30 days.","supported":false,"rationale":"The reply gives 60 days where the policy specifies 30."},
+  {"id":"pol-03","query":"How long can I return a domestic order?","response":"Domestic orders can be returned within 30 days.","evidence":"Domestic returns are accepted within 30 days.","supported":true,"rationale":"The reply preserves the domestic scope and the 30-day window."},
+  {"id":"ord-01","query":"Can I cancel my shipped order?","response":"A dispatched order must be escalated to support.","evidence":"If an order has already dispatched, escalate the cancellation request to support.","supported":true,"rationale":"The answer gives the prescribed escalation for the same order state."},
+  {"id":"pol-02","query":"Can I return my international order?","response":"Yes, international returns are free within 30 days.","evidence":"Domestic returns are accepted within 30 days.","supported":false,"rationale":"No supplied evidence covers international returns or fees."}
+]

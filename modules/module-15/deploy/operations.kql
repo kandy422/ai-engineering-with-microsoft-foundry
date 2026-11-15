@@ -1,0 +1,24 @@
+// Run chapters separately. Substitute an actual redacted app name and request trace ID.
+ContainerAppConsoleLogs
+| where TimeGenerated > ago(2h) and ContainerAppName == "<app>"
+| where Log has "<trace-id>"
+| project TimeGenerated, RevisionName, Log
+| order by TimeGenerated asc
+
+// Use when the Module 16 OpenTelemetry export is configured and observed.
+AppRequests
+| where TimeGenerated > ago(2h) and OperationId == "<trace-id>"
+| project TimeGenerated, OperationId, Name, ResultCode, Success, DurationMs
+| order by TimeGenerated asc
+
+AppDependencies
+| where TimeGenerated > ago(2h) and OperationId == "<trace-id>"
+| project TimeGenerated, OperationId, DependencyType, Target, ResultCode, Success, DurationMs
+| order by TimeGenerated asc
+
+// Run this block in the Application Insights component's Logs context.
+// Substitute the X-Correlation-Id captured from the hosted application's response.
+union withsource=Table requests, dependencies, traces
+| where operation_Id == '<trace-id>'
+| project timestamp, Table, name, success, duration, message, customDimensions
+| order by timestamp asc

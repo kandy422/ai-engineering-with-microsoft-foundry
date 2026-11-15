@@ -1,0 +1,30 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "text": "White scuff mark and a small surface scratch are visible on the front of the headset. Location: front exterior of the device.",
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 483,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 448,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 45,
+      "engine_ttlt_ms": 3197,
+      "pre_inference_ms": 75,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 429,
+      "service_ttlt_ms": 3559,
+      "user_visible_ttft_ms": 354
+    },
+    "prompt_tokens": 46,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 529
+  }
+}

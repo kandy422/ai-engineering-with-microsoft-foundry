@@ -1,0 +1,15 @@
+{
+  "model": "course-chat",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Extract the exact order ID from the customer text, or null if absent. Classify issueType as delivery, billing or review. Return one JSON object with orderId and issueType."
+    },
+    {
+      "role": "user",
+      "content": "My parcel for order ORD-0000 never arrived."
+    }
+  ],
+  "max_completion_tokens": 512,
+  "reasoning_effort": "minimal"
+}

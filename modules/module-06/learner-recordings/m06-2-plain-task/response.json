@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "Dear friend, I’m sorry for this wait,\nYour parcel’s late — that isn’t great.\nOrder ORD-1042’s delay\nHas caused you trouble — I’ll convey.\n\nI’ll check the tracking, status, route,\nAnd find where shipments meet a doubt.\nIf customs, transit, or a scan is missed,\nI’ll chase the reason, and insist.\n\nPlease send any extra note:\nTracking number, or the post you quote.\nIf you’ve already shared that file,\nForgive me — I’ll respond with style.\n\nWe’ll locate it or make amends:\nA replacement, refund, what best extends.\nExpect an update soon and clear,\nWithin one business day — I’ll be here.\n\nThank you for patience, calm and kind,\nWe’ll solve this problem — peace of mind.",
+        "refusal": null
+      }
+    }
+  ]
+}

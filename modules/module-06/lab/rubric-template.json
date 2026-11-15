@@ -1,0 +1,12 @@
+{
+  "criteria": [
+    "Asks for the tracking number",
+    "Uses at most two sentences",
+    "Avoids unconfirmed refunds or delivery dates"
+  ],
+  "scores": [
+    { "caseId": 1, "left": [null, null, null], "right": [null, null, null] },
+    { "caseId": 2, "left": [null, null, null], "right": [null, null, null] },
+    { "caseId": 3, "left": [null, null, null], "right": [null, null, null] }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "Thanks for reaching out about order ORD-1042 — I can review the tracking for you; could you please provide the tracking number? I’ll check the status and get back to you with what I find.",
+        "refusal": null
+      }
+    }
+  ]
+}

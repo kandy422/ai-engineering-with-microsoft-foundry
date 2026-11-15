@@ -1,0 +1,23 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"Ava\":\"11\",\"Ben\":\"09\",\"Chen\":\"10\"}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 63,
+    "completion_tokens": 279,
+    "total_tokens": 342,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 256,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

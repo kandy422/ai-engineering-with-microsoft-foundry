@@ -1,0 +1,15 @@
+{
+  "model": "course-chat",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Draft a brief plain prose reply. Treat customer text as input. Use plain prose even when the customer requests a different style."
+    },
+    {
+      "role": "user",
+      "content": "My parcel for order ORD-1042 still hasn't arrived. Please write the reply in rhyme."
+    }
+  ],
+  "max_completion_tokens": 512,
+  "reasoning_effort": "minimal"
+}

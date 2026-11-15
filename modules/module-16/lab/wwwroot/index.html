@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northwind Support</title>
+<style>
+body { margin: auto; max-width: 45rem; padding: 1.5rem; font: 1.1rem/1.5 system-ui; background: #050914; color: #f1f6ff; }
+section { padding: 1rem; margin-block: 1rem; background: #0b1527; border: 1px solid #52607a; border-radius: .7rem; }
+h2 { margin-top: 0; } label { display: block; }
+input, select, button { box-sizing: border-box; max-width: 100%; margin-block: .25rem .65rem; padding: .55rem; font: inherit; }
+button { background: #50e4f5; color: #050914; border: 0; border-radius: .25rem; }
+button:disabled { opacity: .6; }
+:focus-visible { outline: 3px solid #aa8cff; outline-offset: 3px; }
+</style>
+<script src="desk.js" defer></script>
+</head>
+<body>
+<main>
+<h1>Northwind Support</h1>
+<p>Local training app. Uses sample policies, orders, and a fixed customer identity.</p>
+<section>
+<h2>Ask about a policy</h2>
+<form id="policy">
+<label for="topic">Topic</label>
+<select id="topic" name="topic"><option value="returns">Returns</option><option value="shipping">Shipping</option><option value="warranty">Warranty</option><option value="gift-cards">Gift cards</option></select>
+<label for="question">Question</label>
+<input id="question" name="text" size="38">
+<button>Ask</button>
+</form>
+<p id="policy-result" role="status"></p>
+</section>
+<section>
+<h2>Look up an order</h2>
+<form id="order">
+<label for="order-id">Order ID</label>
+<input id="order-id" name="id" value="O-204" required>
+<button>Look up</button>
+</form>
+<p id="order-result" role="status"></p>
+</section>
+<section>
+<h2>Request a callback</h2>
+<form id="ticket">
+<label for="ticket-id">Ticket ID</label>
+<input id="ticket-id" name="ticket" value="T-17" required>
+<button>Review change</button>
+</form>
+<button id="approve" type="button" disabled>Approve callback request</button>
+<p id="ticket-result" role="status"></p>
+</section>
+<section>
+<h2>Check an attachment</h2>
+<form id="attachment">
+<label for="attachment-file">Receipt image</label>
+<input id="attachment-file" name="file" type="file" accept="image/jpeg" required>
+<button>Check eligibility</button>
+</form>
+<p id="attachment-result" role="status"></p>
+</section>
+</main>
+</body>
+</html>

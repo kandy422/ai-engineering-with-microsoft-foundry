@@ -1,0 +1,6 @@
+{
+  "heard": "The handle on my kettle is cracked.I do not have the full order number.",
+  "reply": "I could not verify your order number. Please enter it in the text field.",
+  "next": "text-fallback",
+  "priorRecognitionResponseSha256": "DE1B3F7060F877583C719DF9793111775DE3A5A9FAC9C86378EB67F21ADADB54"
+}

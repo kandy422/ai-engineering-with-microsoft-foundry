@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "Sorry about that — I can help. Could you please provide:\n\n- the full order number (you gave ORD-1042, please confirm),\n- the delivery address (or the postcode),\n- whether you received a shipping confirmation or tracking number, and\n- when the order was placed?\n\nWith that I’ll check the shipment status and estimated delivery, or start an investigation/raise a claim if it’s missing. If you prefer, I can also initiate a refund or replacement right away once I confirm the details.",
+        "refusal": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "route-01",
+    "task": "route",
+    "prompt": "Route the support ticket. Reply with one label: BILLING, DELIVERY, or RETURNS. Ticket: My card was charged twice for one order.",
+    "expected": "BILLING"
+  },
+  {
+    "id": "route-02",
+    "task": "route",
+    "prompt": "Route the support ticket. Reply with one label: BILLING, DELIVERY, or RETURNS. Ticket: Tracking shows delivered but there is no parcel at my door.",
+    "expected": "DELIVERY"
+  },
+  {
+    "id": "route-03",
+    "task": "route",
+    "prompt": "Route the support ticket. Reply with one label: BILLING, DELIVERY, or RETURNS. Ticket: My parcel arrived and fits poorly. How do I send it back?",
+    "expected": "RETURNS"
+  },
+  {
+    "id": "policy-01",
+    "task": "policy",
+    "prompt": "Policy R12: unopened goods can be returned within 21 days. Policy R13: opened software cannot be returned. How many days for an unopened backpack? Reply with the number and policy ID separated by a space.",
+    "expected": "21 R12"
+  },
+  {
+    "id": "policy-02",
+    "task": "policy",
+    "prompt": "Policy D04: standard delivery takes 4 business days. Policy D07: express delivery takes 2 business days. How many days for express? Reply with the number and policy ID separated by a space.",
+    "expected": "2 D07"
+  },
+  {
+    "id": "policy-03",
+    "task": "policy",
+    "prompt": "Policy R12: unopened goods can be returned within 21 days. What is the return shipping fee? If the evidence does not state the answer, reply exactly UNKNOWN.",
+    "expected": "UNKNOWN"
+  },
+  {
+    "id": "extract-01",
+    "task": "extract text",
+    "prompt": "Receipt transcription: Subtotal EUR 9.00; Tax EUR 0.90; TOTAL EUR 9.90; Cash EUR 20.00. Extract total only as EUR followed by the amount. Reply with nothing else.",
+    "expected": "EUR 9.90"
+  },
+  {
+    "id": "extract-02",
+    "task": "extract text",
+    "prompt": "Receipt transcription: Previous balance USD 21.00; Sale USD 13.12; Sales tax USD 1.08; AMOUNT PAID USD 14.20. Extract the amount paid as USD followed by the amount. Reply with nothing else.",
+    "expected": "USD 14.20"
+  }
+]

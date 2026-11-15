@@ -1,0 +1,7 @@
+ARG RUNTIME_IMAGE
+FROM ${RUNTIME_IMAGE}
+WORKDIR /app
+COPY publish/ ./
+USER $APP_UID
+EXPOSE 8080
+ENTRYPOINT ["dotnet", "Capstone.dll"]

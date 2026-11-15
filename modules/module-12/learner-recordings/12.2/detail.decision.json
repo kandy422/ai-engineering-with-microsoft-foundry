@@ -1,0 +1,30 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "text": "A jagged crack is visible at the top (apex) of the arch. A small displaced segment is present along the crack.",
+  "finishReason": "stop",
+  "usage": {
+    "completion_tokens": 292,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 256,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 58,
+      "engine_ttlt_ms": 1968,
+      "pre_inference_ms": 94,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 428,
+      "service_ttlt_ms": 2331,
+      "user_visible_ttft_ms": 334
+    },
+    "prompt_tokens": 122,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 414
+  }
+}

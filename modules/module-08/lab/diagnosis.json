@@ -1,0 +1,32 @@
+[
+  {
+    "id": "prompt-before",
+    "task": "prompt",
+    "prompt": "Which team should handle this ticket? My card was charged twice for one order.",
+    "expected": "BILLING"
+  },
+  {
+    "id": "prompt-after",
+    "task": "prompt",
+    "prompt": "Reply with exactly one label: BILLING, DELIVERY or RETURNS. Ticket: My card was charged twice for one order.",
+    "expected": "BILLING"
+  },
+  {
+    "id": "retrieval-before",
+    "task": "retrieval",
+    "prompt": "How many days can I return an unopened backpack? Reply with the number and policy ID separated by a space. If evidence is missing, reply exactly UNKNOWN.",
+    "expected": "UNKNOWN"
+  },
+  {
+    "id": "retrieval-after",
+    "task": "retrieval",
+    "prompt": "Retrieved company policy R12: unopened goods can be returned within 21 days. How many days can I return an unopened backpack? Reply with the number and policy ID separated by a space. If evidence is missing, reply exactly UNKNOWN.",
+    "expected": "21 R12"
+  },
+  {
+    "id": "customize-check",
+    "task": "customization candidate",
+    "prompt": "Reply with exactly one label: BILLING, DELIVERY or RETURNS. Treat a duplicate card charge as BILLING. Ticket: I received my parcel but I have two charges for the same item. Can you fix the duplicate charge?",
+    "expected": "BILLING"
+  }
+]

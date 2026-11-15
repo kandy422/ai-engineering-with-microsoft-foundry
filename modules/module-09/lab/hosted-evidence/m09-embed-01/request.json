@@ -1,0 +1,11 @@
+{
+  "model": "course-embed",
+  "encoding_format": "float",
+  "input": [
+    "Can I return a laptop after 30 days?",
+    "May I send my notebook computer back once a month has passed?",
+    "Can I return a laptop within 30 days?",
+    "What is the return window for notebook computers?",
+    "How do I change the billing address on my account?"
+  ]
+}

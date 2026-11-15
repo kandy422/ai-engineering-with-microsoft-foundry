@@ -1,0 +1,43 @@
+{
+  "label": "AI-generated illustration",
+  "purpose": "Fictional help-centre artwork",
+  "model": "Stable Diffusion 1.5 Q4_0 GGUF",
+  "modelRevision": "dcac270609fffc0ce7c7d41a3c0e752721859f7c",
+  "modelSha256": "c2f6e92f9d08d69cc673a1003528ac8199274b3c0eaec88d5fbefe5af67bd42b",
+  "runtime": "stable-diffusion.cpp master-1086-465adf3",
+  "seed": 48271,
+  "steps": 24,
+  "sampler": "Euler ancestral",
+  "cfgScale": 7,
+  "negativePrompt": "lettering, logo, watermark, duplicate kettle, people, clutter",
+  "assets": [
+    {
+      "asset": "public/generated-kettle-v1.png",
+      "version": 1,
+      "method": "text-to-image",
+      "prompt": "Studio product illustration of a single purple enamel stovetop tea kettle with a bright cyan curved handle, on a plain dark navy background, three-quarter view, centred product shot, clear silhouette, no text",
+      "sha256": "5f8e246d6ca98ececdecea72f595605a075ac876c825494a4640f20e217883c3"
+    },
+    {
+      "asset": "public/generated-kettle-v2.png",
+      "version": 2,
+      "parent": "public/generated-kettle-v1.png",
+      "method": "image-to-image",
+      "strength": 0.42,
+      "prompt": "Studio product illustration of the same single purple enamel stovetop tea kettle with a warm amber curved handle, on a plain dark navy background, three-quarter view, centred product shot, clear silhouette, no text",
+      "sha256": "688f46d698377bfb2bd5ebb175cf9bc6a75f2540a3a75f1ec50eed37f8dd8da7",
+      "review": "Rejected: the requested amber handle did not appear and the lid changed."
+    },
+    {
+      "asset": "public/generated-kettle-v3.png",
+      "version": 3,
+      "parent": "public/generated-kettle-v1.png",
+      "method": "Pillow/NumPy HSV hue edit, limited to selected cyan pixels",
+      "instruction": "Change the visible cyan body to amber without modifying other pixels.",
+      "review": "Verified single-region colour edit. Retained as labelled draft artwork only; the generated kettle shape needs review.",
+      "changedPixels": 34401,
+      "pixelsChangedOutsideMask": 0,
+      "sha256": "59d2ad4c95b53605c01f2b8f911d88d70f884abe65575692d374b2a20d118667"
+    }
+  ]
+}

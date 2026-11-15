@@ -1,0 +1,5 @@
+[
+  {"id":"bad-plan","steps":[{"order":1,"tool":"cancel_order","orderId":"A18","status":"Rejected","reason":"wrong order for verified customer"}]},
+  {"id":"tool-error","steps":[{"order":1,"tool":"get_order","orderId":"A17","status":"OK","reason":"verified, processing"},{"order":2,"tool":"cancel_order","orderId":"A17","status":"Unavailable","reason":"inventory adapter timeout"}]},
+  {"id":"completed","steps":[{"order":1,"tool":"get_order","orderId":"A17","status":"OK","reason":"verified, processing"},{"order":2,"tool":"cancel_order","orderId":"A17","status":"OK","reason":"recorded cancellation"}]}
+]

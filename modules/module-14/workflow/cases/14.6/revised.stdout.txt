@@ -1,0 +1,3 @@
+What is my delivery status? => Delivery status
+Any news on my parcel? => Delivery status
+Can I reset my password? => Review

@@ -1,0 +1,9 @@
+
+documents
+North delivery policy => Included
+North staff policy => Excluded
+
+orders
+A-104 / same owner => Allowed
+A-105 / different owner => Denied
+B-104 / different tenant => Denied

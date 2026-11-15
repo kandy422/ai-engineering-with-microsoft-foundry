@@ -1,0 +1,5 @@
+
+gate
+Authorised lookup => Allowed
+Unsupported capability fixture => Denied
+Suspect document fixture => Review

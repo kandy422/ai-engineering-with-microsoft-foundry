@@ -1,0 +1,23 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "1. Hello and thank you for contacting our support team today.\n2. Good morning, we appreciate your message and are ready to help.\n3. Hi there, I'm here to assist you with any questions.\n4. Welcome, thank you for reaching out; how may I assist today?\n5. Thanks for contacting support, please describe the issue you are experiencing.\n6. We value your time and are standing by to resolve this promptly.\n7. I’m glad you reached out—let me gather some details to help.\n8. Thank you for choosing our services; tell me how I can help.\n9. Hello, I understand this may be frustrating and I will assist.\n10. Please accept our apologies for the inconvenience; we will work to fix it.\n11. Good afternoon, I’m available to walk you through troubleshooting steps now.\n12. Welcome back, we’re committed to finding a solution for your issue today."
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 36,
+    "completion_tokens": 643,
+    "total_tokens": 679,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 448,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

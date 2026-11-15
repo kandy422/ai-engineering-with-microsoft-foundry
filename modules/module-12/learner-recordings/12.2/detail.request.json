@@ -1,0 +1,5 @@
+{
+  "model": "course-chat",
+  "prompt": "Describe visible damage only. Name the visible location if supported; otherwise say uncertain. Do not infer cause, safety, or warranty. Answer in two short sentences.",
+  "max_completion_tokens": 512
+}

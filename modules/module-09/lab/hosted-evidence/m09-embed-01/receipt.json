@@ -1,0 +1,15 @@
+{
+  "endpoint": "https://pp-ai-course-ac7hzqgkswe4u.openai.azure.com/openai/v1/embeddings",
+  "transport": "Direct HTTPS; Entra ID; redirects and retries disabled",
+  "httpStatus": 200,
+  "requestId": "fc5631c9-c211-40b1-ba64-d65d196b44c3",
+  "elapsedMs": 1828.41,
+  "model": "text-embedding-3-small",
+  "vectorDimensions": [
+    1536,
+    1536,
+    1536,
+    1536,
+    1536
+  ]
+}

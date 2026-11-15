@@ -1,0 +1,5 @@
+{
+  "transport": "Direct HTTPS; Entra ID; redirects and retries disabled",
+  "httpStatus": 200,
+  "elapsedMs": 5535.29
+}

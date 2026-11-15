@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "I’m sorry your order hasn’t arrived — I’ll help get this sorted.\n\nCould you please confirm a few quick details so I can look into it right away?\n- The shipping address on the order (or tell me if it’s the same as the one on your account)\n- Whether you received a shipping confirmation or tracking number (if yes, please paste it)\n- Any delivery exceptions or attempted delivery notices you’ve seen\n\nOnce I have that, I’ll check the tracking and status with our carrier and get back to you with an update and next steps (refund, replacement, or carrier claim) within one business day. If you prefer, I can also open an investigation immediately while I wait for the extra info.",
+        "refusal": null
+      }
+    }
+  ]
+}

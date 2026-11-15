@@ -1,0 +1,16 @@
+{
+  "lesson": "8.3",
+  "source": "Captured instructor benchmark replay",
+  "hostedModel": "gpt-5-mini-2025-08-07",
+  "local": {
+    "exactMatches": 9,
+    "measured": 24,
+    "medianMs": 155.0
+  },
+  "hosted": {
+    "exactMatches": 24,
+    "measured": 24,
+    "medianMs": 2205.8
+  },
+  "timing": "Serial client wall time through complete response; inter-request pacing and token acquisition excluded."
+}

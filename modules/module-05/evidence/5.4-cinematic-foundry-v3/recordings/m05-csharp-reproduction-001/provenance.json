@@ -1,0 +1,6 @@
+{
+  "transport": "Actual compiled C# HttpClient; Entra; no redirects or retry",
+  "elapsedMs": 2506.83,
+  "exitCode": 0,
+  "httpValidation": "EnsureSuccessStatusCode passed; exact numeric status not emitted by this runner"
+}

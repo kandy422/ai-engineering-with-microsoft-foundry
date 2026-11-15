@@ -1,0 +1,11 @@
+{
+  "model": "course-chat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Assign Ava, Ben and Chen to distinct slots 09, 10 and 11. Ava cannot take 09. Ben must be before Chen. Chen cannot take 11. Return only one JSON object with keys Ava, Ben and Chen and slot strings. Do not include explanations."
+    }
+  ],
+  "max_completion_tokens": 2048,
+  "reasoning_effort": "low"
+}

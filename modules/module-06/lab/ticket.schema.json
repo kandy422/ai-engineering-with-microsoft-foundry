@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "orderId": { "type": ["string", "null"] },
+    "issueType": { "type": "string", "enum": ["delivery", "billing", "review"] }
+  },
+  "required": ["orderId", "issueType"],
+  "additionalProperties": false
+}

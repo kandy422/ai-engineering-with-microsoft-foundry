@@ -1,0 +1,15 @@
+{
+  "model": "course-chat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Verified order ID: A-1042."
+    },
+    {
+      "role": "user",
+      "content": "Return only the exact order ID from the earlier user messages. If no order ID is present, return MISSING."
+    }
+  ],
+  "max_completion_tokens": 512,
+  "reasoning_effort": "low"
+}

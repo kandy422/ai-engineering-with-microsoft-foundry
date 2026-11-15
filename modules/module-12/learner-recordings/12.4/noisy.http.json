@@ -1,0 +1,8 @@
+{
+  "startedUtc": "2026-11-15T04:02:11.2533565+00:00",
+  "method": "POST",
+  "endpoint": "/stt/speech/recognition/conversation/cognitiveservices/v1",
+  "status": 200,
+  "elapsedMs": 1373,
+  "responseSha256": "E1593037E5DA88248E3D77D49AAADBF13B9C821DE618913A9AD6C15804022C21"
+}

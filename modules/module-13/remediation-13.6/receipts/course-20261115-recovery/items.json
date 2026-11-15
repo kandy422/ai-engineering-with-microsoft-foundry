@@ -1,0 +1,539 @@
+[
+  {
+    "object": "eval.run.output_item",
+    "id": "1",
+    "run_id": "evalrun_0f2312b6727f4bd2a188606e6f5f51ff",
+    "eval_id": "eval_bb56fe3c0474492e8df42b3d36130c12",
+    "created_at": 1794715360,
+    "status": "completed",
+    "datasource_item_id": 0,
+    "datasource_item": {
+      "caseId": "hold-07",
+      "query": "Cancel the processing order after verification.",
+      "slice": "common",
+      "response": "cancel",
+      "reference": "cancel",
+      "evidence": [
+        "cancel-v2"
+      ],
+      "context": "Cancel a processing order after verification.",
+      "version": "keyword"
+    },
+    "results": [
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: Cancel the processing order after verification.\nRetrieved policy: Cancel a processing order after verification.\nCandidate: cancel\nReference outcome: cancel"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate\u0027s selected policy outcome with the reference outcome. The reference outcome is \u0027cancel\u0027. The candidate outcome is \u0027cancel\u0027, which matches exactly.\u0022,\u0022conclusion\u0022:\u0022Match found: candidate selects the same policy outcome as reference.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 283,
+            "completion_tokens": 73,
+            "prompt_tokens": 210,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "2",
+    "run_id": "evalrun_0f2312b6727f4bd2a188606e6f5f51ff",
+    "eval_id": "eval_bb56fe3c0474492e8df42b3d36130c12",
+    "created_at": 1794715360,
+    "status": "completed",
+    "datasource_item_id": 1,
+    "datasource_item": {
+      "caseId": "hold-02",
+      "query": "Can I return a domestic order after 20 days?",
+      "slice": "common",
+      "response": "answer:30 days",
+      "reference": "answer:30 days",
+      "evidence": [
+        "returns-v3"
+      ],
+      "context": "How long can I return a domestic order? Domestic returns are accepted within 30 days.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: Can I return a domestic order after 20 days?\nRetrieved policy: How long can I return a domestic order? Domestic returns are accepted within 30 days.\nCandidate: answer:30 days\nReference outcome: answer:30 days"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate answer to reference outcome. Both state \u002730 days\u0027 as the answer.\u0022,\u0022conclusion\u0022:\u0022Candidate matches the reference outcome.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 286,
+            "completion_tokens": 55,
+            "prompt_tokens": 231,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "3",
+    "run_id": "evalrun_0f2312b6727f4bd2a188606e6f5f51ff",
+    "eval_id": "eval_bb56fe3c0474492e8df42b3d36130c12",
+    "created_at": 1794715360,
+    "status": "completed",
+    "datasource_item_id": 2,
+    "datasource_item": {
+      "caseId": "hold-04",
+      "query": "Cancel the parcel that shipped this morning.",
+      "slice": "risk",
+      "response": "escalate",
+      "reference": "escalate",
+      "evidence": [
+        "dispatch-v2"
+      ],
+      "context": "Cancel a parcel that already shipped. Escalate the request.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: Cancel the parcel that shipped this morning.\nRetrieved policy: Cancel a parcel that already shipped. Escalate the request.\nCandidate: escalate\nReference outcome: escalate"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate\u0027s selected policy outcome with the reference outcome.\u0022,\u0022conclusion\u0022:\u0022Both candidate and reference outcomes are \u0027escalate\u0027.\u0022},{\u0022description\u0022:\u0022Check for any stated time limit in the reference and whether candidate preserved it.\u0022,\u0022conclusion\u0022:\u0022No time limit stated in the reference; candidate preserved outcome.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 305,
+            "completion_tokens": 88,
+            "prompt_tokens": 217,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "4",
+    "run_id": "evalrun_0f2312b6727f4bd2a188606e6f5f51ff",
+    "eval_id": "eval_bb56fe3c0474492e8df42b3d36130c12",
+    "created_at": 1794715360,
+    "status": "completed",
+    "datasource_item_id": 3,
+    "datasource_item": {
+      "caseId": "hold-05",
+      "query": "My order has shipped. Can you cancel it?",
+      "slice": "risk",
+      "response": "escalate",
+      "reference": "escalate",
+      "evidence": [
+        "dispatch-v2"
+      ],
+      "context": "Cancel a parcel that already shipped. Escalate the request.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: My order has shipped. Can you cancel it?\nRetrieved policy: Cancel a parcel that already shipped. Escalate the request.\nCandidate: escalate\nReference outcome: escalate"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate outcome to reference outcome. Both are \u0027escalate\u0027.\u0022,\u0022conclusion\u0022:\u0022Candidate matches reference.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 270,
+            "completion_tokens": 51,
+            "prompt_tokens": 219,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "5",
+    "run_id": "evalrun_0f2312b6727f4bd2a188606e6f5f51ff",
+    "eval_id": "eval_bb56fe3c0474492e8df42b3d36130c12",
+    "created_at": 1794715360,
+    "status": "completed",
+    "datasource_item_id": 4,
+    "datasource_item": {
+      "caseId": "hold-07",
+      "query": "Cancel the processing order after verification.",
+      "slice": "common",
+      "response": "cancel",
+      "reference": "cancel",
+      "evidence": [
+        "cancel-v2"
+      ],
+      "context": "Cancel a processing order after verification.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: Cancel the processing order after verification.\nRetrieved policy: Cancel a processing order after verification.\nCandidate: cancel\nReference outcome: cancel"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate\u0027s selected policy outcome to the reference outcome. Both are \u0027cancel\u0027.\u0022,\u0022conclusion\u0022:\u0022They match exactly.\u0022},{\u0022description\u0022:\u0022Ensure any time limit or additional conditions are preserved. There are none beyond matching \u0027cancel\u0027.\u0022,\u0022conclusion\u0022:\u0022No discrepancies found.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 292,
+            "completion_tokens": 82,
+            "prompt_tokens": 210,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "6",
+    "run_id": "evalrun_0f2312b6727f4bd2a188606e6f5f51ff",
+    "eval_id": "eval_bb56fe3c0474492e8df42b3d36130c12",
+    "created_at": 1794715360,
+    "status": "completed",
+    "datasource_item_id": 5,
+    "datasource_item": {
+      "caseId": "hold-09",
+      "query": "Cancel a verified order that is still processing.",
+      "slice": "common",
+      "response": "cancel",
+      "reference": "cancel",
+      "evidence": [
+        "cancel-v2"
+      ],
+      "context": "Cancel a processing order after verification.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: Cancel a verified order that is still processing.\nRetrieved policy: Cancel a processing order after verification.\nCandidate: cancel\nReference outcome: cancel"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate\u0027s selected policy outcome to the reference outcome. Both are \u0027cancel\u0027.\u0022,\u0022conclusion\u0022:\u0022Candidate matches the reference exactly.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 267,
+            "completion_tokens": 55,
+            "prompt_tokens": 212,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "7",
+    "run_id": "evalrun_0f2312b6727f4bd2a188606e6f5f51ff",
+    "eval_id": "eval_bb56fe3c0474492e8df42b3d36130c12",
+    "created_at": 1794715360,
+    "status": "completed",
+    "datasource_item_id": 6,
+    "datasource_item": {
+      "caseId": "hold-12",
+      "query": "Can I return an overseas order from abroad?",
+      "slice": "unanswerable",
+      "response": "ask-for-policy",
+      "reference": "ask-for-policy",
+      "evidence": [],
+      "context": "",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: Can I return an overseas order from abroad?\nRetrieved policy: \nCandidate: ask-for-policy\nReference outcome: ask-for-policy"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate outcome to reference outcome. The candidate response is \u0027ask-for-policy\u0027 and the reference outcome is also \u0027ask-for-policy\u0027, which matches exactly.\u0022,\u0022conclusion\u0022:\u0022Outcomes match.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 277,
+            "completion_tokens": 67,
+            "prompt_tokens": 210,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  }
+]

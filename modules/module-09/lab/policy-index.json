@@ -1,0 +1,51 @@
+[
+  {
+    "Id": "standard-v1",
+    "Product": "laptop",
+    "Scope": "public",
+    "Topic": "standard",
+    "Content": "Laptop standard returns are accepted within 30 days of delivery."
+  },
+  {
+    "Id": "recall-v1",
+    "Product": "laptop",
+    "Scope": "public",
+    "Topic": "recall",
+    "Content": "Safety notices: For a published recall, follow the recall notice even after the return deadline."
+  },
+  {
+    "Id": "tablets-v1",
+    "Product": "tablet",
+    "Scope": "public",
+    "Topic": "standard",
+    "Content": "Tablets can be returned within 14 days of delivery. Laptop return terms are separate."
+  },
+  {
+    "Id": "partner-v1",
+    "Product": "laptop",
+    "Scope": "partner",
+    "Topic": "recall",
+    "Content": "Laptop partner recall returns after the standard deadline follow the internal recall case guide."
+  },
+  {
+    "Id": "billing-v1",
+    "Product": "account",
+    "Scope": "public",
+    "Topic": "billing",
+    "Content": "Change your billing address in account settings before downloading an updated invoice."
+  },
+  {
+    "Id": "rtn-7041-v1",
+    "Product": "laptop",
+    "Scope": "public",
+    "Topic": "order-code",
+    "Content": "RTN-7041 identifies a return label reissue request."
+  },
+  {
+    "Id": "rtn-7401-v1",
+    "Product": "laptop",
+    "Scope": "public",
+    "Topic": "order-code",
+    "Content": "RTN-7401 identifies a returned parcel awaiting inspection."
+  }
+]

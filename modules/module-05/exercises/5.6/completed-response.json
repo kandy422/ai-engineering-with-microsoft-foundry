@@ -1,0 +1,11 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "{\"Ava\":\"11\",\"Ben\":\"09\",\"Chen\":\"10\"}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {}
+}

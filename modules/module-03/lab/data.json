@@ -1,0 +1,60 @@
+{
+  "train": {
+    "routine": [
+      "reset my password",
+      "need invoice copy",
+      "update billing address",
+      "schedule maintenance",
+      "request new account",
+      "cancel subscription",
+      "question about refund",
+      "download usage report",
+      "change login email",
+      "monthly payment receipt",
+      "printer setup help",
+      "software upgrade instructions"
+    ],
+    "urgent": [
+      "checkout down for everyone",
+      "production outage blocks all payments",
+      "all staff locked out",
+      "customer portal unavailable across regions",
+      "orders failing in production",
+      "entire service down since morning"
+    ]
+  },
+  "development": {
+    "routine": [
+      "send last month invoice",
+      "reset password for my account",
+      "schedule a production maintenance window",
+      "update my card",
+      "where is my receipt",
+      "is last week's outage documented",
+      "copy the usage report",
+      "add a billing contact",
+      "upgrade my plan",
+      "change my email"
+    ],
+    "urgent": [
+      "checkout down across all stores",
+      "nobody can place an order",
+      "entire portal unavailable",
+      "payments failing for all customers"
+    ]
+  },
+  "final": {
+    "routine": [
+      "replace expired billing card",
+      "download my annual receipt",
+      "historic outage report request",
+      "where can I change my password"
+    ],
+    "urgent": [
+      "all payments failing since noon",
+      "production portal down in both regions",
+      "nothing is going through at checkout",
+      "all staff locked out of accounts"
+    ]
+  }
+}

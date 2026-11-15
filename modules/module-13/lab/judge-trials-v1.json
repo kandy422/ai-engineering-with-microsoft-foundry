@@ -1,0 +1,194 @@
+[
+  {
+    "rubric": "general",
+    "caseId": "pol-01",
+    "seed": 13,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "pol-01",
+    "seed": 41,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "pol-01",
+    "seed": 97,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "pol-03",
+    "seed": 13,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "pol-03",
+    "seed": 41,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "pol-03",
+    "seed": 97,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "ord-01",
+    "seed": 13,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "ord-01",
+    "seed": 41,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "ord-01",
+    "seed": 97,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "pol-02",
+    "seed": 13,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "pol-02",
+    "seed": 41,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "general",
+    "caseId": "pol-02",
+    "seed": 97,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-01",
+    "seed": 13,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-01",
+    "seed": 41,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-01",
+    "seed": 97,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-03",
+    "seed": 13,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-03",
+    "seed": 41,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-03",
+    "seed": 97,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "ord-01",
+    "seed": 13,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "ord-01",
+    "seed": 41,
+    "reference": true,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "ord-01",
+    "seed": 97,
+    "reference": true,
+    "output": "NO",
+    "verdict": false
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-02",
+    "seed": 13,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-02",
+    "seed": 41,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  },
+  {
+    "rubric": "evidence",
+    "caseId": "pol-02",
+    "seed": 97,
+    "reference": false,
+    "output": "YES",
+    "verdict": true
+  }
+]

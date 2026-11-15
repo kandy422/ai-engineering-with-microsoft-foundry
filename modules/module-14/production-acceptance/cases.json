@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "contract": "Module 16 frozen build-checkpoint-v2 hosted response vocabulary. Seed IDs must be confirmed in the allocated environment.",
+  "inputs": {
+    "ownOrderA": {
+      "id": "ORD-1042"
+    },
+    "orderB": {
+      "id": "ORD-2045"
+    },
+    "unknownOrder": {
+      "id": "ORD-9999"
+    },
+    "sharedTopicQuestion": {
+      "text": "What is my standard delivery window?"
+    },
+    "ticketA": "Synthetic seeded ticket owned by A",
+    "proposalFromA": "Value returned by the propose case",
+    "actionA": "Request callback"
+  },
+  "cases": [
+    {
+      "id": "missing-identity",
+      "route": "/order",
+      "actor": "none",
+      "input": "ownOrderA",
+      "http": [
+        401
+      ],
+      "status": [],
+      "writes": 0
+    },
+    {
+      "id": "missing-scope",
+      "route": "/order",
+      "actor": "A-without-Support.Access",
+      "input": "ownOrderA",
+      "http": [
+        403
+      ],
+      "status": [],
+      "writes": 0
+    },
+    {
+      "id": "own-order",
+      "route": "/order",
+      "actor": "human-A",
+      "input": "ownOrderA",
+      "http": [
+        200
+      ],
+      "status": [
+        "found"
+      ],
+      "writes": 0,
+      "identity": "human-A"
+    },
+    {
+      "id": "cross-customer",
+      "route": "/order",
+      "actor": "A",
+      "input": "orderB",
+      "http": [
+        200
+      ],
+      "status": [
+        "missing"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "unknown-order",
+      "route": "/order",
+      "actor": "A",
+      "input": "unknownOrder",
+      "http": [
+        200
+      ],
+      "status": [
+        "missing"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "scope-field-schema",
+      "route": "/order",
+      "actor": "A",
+      "input": "extra-scope-field-rejected-by-local-json-contract-test",
+      "http": [
+        400
+      ],
+      "status": [],
+      "writes": 0
+    },
+    {
+      "id": "owned-evidence",
+      "route": "/answer",
+      "actor": "B",
+      "input": "sharedTopicQuestion",
+      "http": [
+        200
+      ],
+      "status": [
+        "answered"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "scoped-evidence",
+      "route": "/answer",
+      "actor": "A",
+      "input": "sharedTopicQuestion",
+      "http": [
+        200
+      ],
+      "status": [
+        "answered"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "untrusted-evidence",
+      "route": "/answer",
+      "actor": "A",
+      "input": "preclassified-untrusted-evidence-unit-fixture",
+      "http": [
+        200
+      ],
+      "status": [
+        "abstain",
+        "review",
+        "no_evidence",
+        "invalid_citation"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "propose",
+      "route": "/propose",
+      "actor": "A",
+      "input": "ticketA-approved-action",
+      "http": [
+        200
+      ],
+      "status": [
+        "approval_required"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "wrong-approver",
+      "route": "/approve",
+      "actor": "B",
+      "input": "proposalFromA",
+      "http": [
+        200
+      ],
+      "status": [
+        "denied"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "approve",
+      "route": "/approve",
+      "actor": "A",
+      "input": "proposalFromA",
+      "http": [
+        200
+      ],
+      "status": [
+        "applied"
+      ],
+      "writes": 1
+    },
+    {
+      "id": "duplicate",
+      "route": "/approve",
+      "actor": "A",
+      "input": "proposalFromA",
+      "http": [
+        200
+      ],
+      "status": [
+        "already_applied"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "after-restart",
+      "route": "/approve",
+      "actor": "A",
+      "input": "proposalFromA",
+      "http": [
+        200
+      ],
+      "status": [
+        "already_applied"
+      ],
+      "writes": 0
+    },
+    {
+      "id": "service-a-own-order",
+      "route": "/order",
+      "actor": "service-A",
+      "input": "ownOrderA",
+      "http": [
+        200
+      ],
+      "status": [
+        "found"
+      ],
+      "writes": 0,
+      "identity": "service-A"
+    },
+    {
+      "id": "service-b-own-order",
+      "route": "/order",
+      "actor": "service-B",
+      "input": "orderB",
+      "http": [
+        200
+      ],
+      "status": [
+        "found"
+      ],
+      "writes": 0,
+      "identity": "service-B"
+    },
+    {
+      "id": "service-role-missing",
+      "route": "/order",
+      "actor": "service-no-role",
+      "input": "ownOrderA",
+      "http": [
+        403
+      ],
+      "status": [],
+      "writes": 0,
+      "identity": "service-no-role"
+    },
+    {
+      "id": "service-subject-unmapped",
+      "route": "/order",
+      "actor": "service-unmapped",
+      "input": "ownOrderA",
+      "http": [
+        403
+      ],
+      "status": [],
+      "writes": 0,
+      "identity": "service-unmapped"
+    },
+    {
+      "id": "service-client-unlisted",
+      "route": "/order",
+      "actor": "service-unlisted",
+      "input": "ownOrderA",
+      "http": [
+        403
+      ],
+      "status": [],
+      "writes": 0,
+      "identity": "service-unlisted"
+    }
+  ],
+  "identityAliases": {
+    "human-A": {
+      "kind": "delegated-user",
+      "client": "delegated-client",
+      "subject": "human-A",
+      "customerScope": "A"
+    },
+    "service-A": {
+      "kind": "service-principal",
+      "client": "automation-A",
+      "subject": "service-A",
+      "customerScope": "A"
+    },
+    "service-B": {
+      "kind": "service-principal",
+      "client": "automation-B",
+      "subject": "service-B",
+      "customerScope": "B"
+    },
+    "service-no-role": {
+      "kind": "service-principal",
+      "denial": "required-role-missing"
+    },
+    "service-unmapped": {
+      "kind": "service-principal",
+      "denial": "subject-unmapped"
+    },
+    "service-unlisted": {
+      "kind": "service-principal",
+      "denial": "client-unlisted"
+    }
+  }
+}

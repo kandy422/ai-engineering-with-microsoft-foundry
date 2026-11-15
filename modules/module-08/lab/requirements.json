@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "name": "Route ticket",
+      "modality": "text",
+      "tokens": 512,
+      "hosting": [
+        "regional",
+        "local"
+      ]
+    },
+    {
+      "name": "Answer policy",
+      "modality": "text",
+      "tokens": 8000,
+      "hosting": [
+        "regional",
+        "local"
+      ]
+    },
+    {
+      "name": "Read receipt",
+      "modality": "image",
+      "tokens": 1024,
+      "hosting": [
+        "local"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Regional text",
+      "modalities": [
+        "text"
+      ],
+      "context": 16000,
+      "hosting": "regional"
+    },
+    {
+      "name": "Local image",
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "context": 4000,
+      "hosting": "local"
+    }
+  ]
+}

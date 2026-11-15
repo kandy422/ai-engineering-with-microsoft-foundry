@@ -1,0 +1,8 @@
+{
+  "startedUtc": "2026-11-15T04:02:17.7407807+00:00",
+  "method": "POST",
+  "endpoint": "/documentintelligence/documentModels/prebuilt-receipt:analyze",
+  "status": 202,
+  "elapsedMs": 1325,
+  "responseSha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+}

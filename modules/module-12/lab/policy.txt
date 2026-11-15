@@ -1,0 +1,2 @@
+DAMAGED-01|submit a photo of the visible damage and keep the packaging for agent review.
+RETURNS-01|For a change-of-mind return, follow the standard return process.

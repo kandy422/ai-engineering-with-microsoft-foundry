@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "scope": "Design and fictional fixture only. Module 16 owns authenticated runtime authorization and integration.",
+  "fixture": {
+    "tenantAlias": "lab-tenant",
+    "customerAlias": "customer-a",
+    "canonicalOrderId": "ORD-1042",
+    "receiptReference": "048271",
+    "conflictingReference": "048272",
+    "receiptImage": "../lab/evidence/receipt.png",
+    "matchingSpeech": "fixtures/request-agreement.wav",
+    "conflictingSpeech": "fixtures/request-conflict.wav"
+  },
+  "extract": {
+    "documentService": "Document Intelligence prebuilt-receipt 2024-11-30",
+    "documentInput": "Single-page private PNG bytes, no public URL required.",
+    "documentResult": "On succeeded, inspect analyzeResult.content for one ORDER line with six ASCII digits; retain the leading zero. Retain field names, confidence, accepted date/amounts and arithmetic decision separately.",
+    "speechService": "Speech short-audio REST en-GB on configured custom domain",
+    "speechInput": "Mono 16 kHz PCM16 WAV, no more than ten seconds for the recording.",
+    "speechResult": "On RecognitionStatus Success, inspect DisplayText or detailed NBest display for an unambiguous six-digit reference. Keep unrecognized, missing and ambiguous inputs distinct from agreement.",
+    "evidenceMetadata": ["sourceKind", "inputSha256", "requestId", "extractorVersion", "referenceCandidate", "validationState"]
+  },
+  "trustedJoin": [
+    "Validate calling identity and resolve tenant/customer server-side.",
+    "Resolve the requested ORD-xxxx in that tenant/customer's canonical order store before making paid attachment calls. Never derive the authenticated scope or authorized order from OCR, speech or ticket text.",
+    "Read the expected six-digit receipt reference from that canonical record or a server-side mapping scoped by tenant, customer and canonical order. The above lab mapping is a fixture, not a production lookup.",
+    "For an authorized order, compare only successful, unambiguous extracted references against the expected reference. Attach evidence IDs and provenance only to the row whose scope was verified."
+  ],
+  "outcomes": {
+    "denied": "Unresolved or out-of-scope canonical order; no attachment inference and no identifiers disclosed.",
+    "clarify": "Missing, unreadable, ambiguous or mismatched reference; no order disclosure from the attachment.",
+    "review": "References agree but required document fields or arithmetic did not validate, or an extraction service failed.",
+    "eligible": "Both references corroborate the canonical binding and receipt validation passes. Independently apply scoped policy lookup and action authorization."
+  }
+}

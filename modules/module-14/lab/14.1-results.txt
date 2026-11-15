@@ -1,0 +1,11 @@
+ownership
+Principal: north/customer-a
+A-104 (own order)   => Allowed
+A-105 (other owner) => Denied
+
+coverage
+Asset             Boundary            Control                      Owner
+Session           Customer -> App     Verify session               Gateway
+Private policy    Index -> Model      Filter by document scope     Retrieval
+Order record      App -> Order tool   Verify tenant and owner      Orders
+Order details     App -> Logs         Project status fields only   Telemetry

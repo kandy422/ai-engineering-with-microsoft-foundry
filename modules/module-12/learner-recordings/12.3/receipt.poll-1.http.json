@@ -1,0 +1,8 @@
+{
+  "startedUtc": "2026-11-15T04:01:25.1091928+00:00",
+  "method": "GET",
+  "endpoint": "/documentintelligence/documentModels/prebuilt-receipt/analyzeResults/20277d29-b297-4c28-9f1e-af7be157409d",
+  "status": 200,
+  "elapsedMs": 299,
+  "responseSha256": "BFBE2BB43194719C228CE305BEA02F7FA7C629E943CAFB30AC67D3E23906DFAE"
+}

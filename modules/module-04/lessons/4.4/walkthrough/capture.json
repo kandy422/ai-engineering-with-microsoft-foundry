@@ -1,0 +1,25 @@
+{
+  "lesson": "4.4",
+  "source": "lessons/4.4/walkthrough/walkthrough.py",
+  "sourceSha256": "af13dd2d3ff92384a689b29220d505cd03c8b9f302dcfd30fa26b35d5d5a1a98",
+  "runtime": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "method": "Local subprocess capture. The lesson reconstructs the recorded commands and renders captured stdout verbatim.",
+  "runs": [
+    {
+      "command": "py -3.12 lessons/4.4/walkthrough/walkthrough.py 0",
+      "argv": [
+        "0"
+      ],
+      "stdout": "before: a=0.500000 b=0.500000\ngradient: da=-2.187500 db=-2.187500\nafter:  a=0.500000 b=0.500000",
+      "exitCode": 0
+    },
+    {
+      "command": "py -3.12 lessons/4.4/walkthrough/walkthrough.py 0.03",
+      "argv": [
+        "0.03"
+      ],
+      "stdout": "before: a=0.500000 b=0.500000\ngradient: da=-2.187500 db=-2.187500\nafter:  a=0.565625 b=0.565625",
+      "exitCode": 0
+    }
+  ]
+}

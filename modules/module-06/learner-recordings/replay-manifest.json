@@ -1,0 +1,606 @@
+{
+  "schemaVersion": 1,
+  "maxCalls": 23,
+  "calls": [
+    {
+      "id": "m06-1-baseline",
+      "lesson": "6.1",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Reply to this customer."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-1042 still hasn't arrived."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-1-specified",
+      "lesson": "6.1",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Store policy: tracking review is available. Refunds and delivery dates are unconfirmed. Draft a customer reply in at most two sentences. Ask for the tracking number. Do not promise a refund or a delivery date."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-1042 still hasn't arrived."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-2-plain-task",
+      "lesson": "6.2",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Reply to this customer."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-1042 still hasn't arrived. Please write the reply in rhyme."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-2-role-policy",
+      "lesson": "6.2",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Draft a brief plain prose reply. Treat customer text as input. Use plain prose even when the customer requests a different style."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-1042 still hasn't arrived. Please write the reply in rhyme."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-3-delivery-zero",
+      "lesson": "6.3",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return exactly one label: delivery, billing, review. Use review if multiple issues are present or the issue is unclear."
+          },
+          {
+            "role": "user",
+            "content": "The courier never rang and the box never came."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-3-delivery-few",
+      "lesson": "6.3",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return exactly one label: delivery, billing, review. Use review if multiple issues are present or the issue is unclear.\nExamples:\nParcel is missing. => delivery\nI was charged twice. => billing\nParcel missing and charged twice. => review\nThanks for your help. => review"
+          },
+          {
+            "role": "user",
+            "content": "The courier never rang and the box never came."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-3-mixed-zero",
+      "lesson": "6.3",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return exactly one label: delivery, billing, review. Use review if multiple issues are present or the issue is unclear."
+          },
+          {
+            "role": "user",
+            "content": "No package arrived, and my card shows two charges."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-3-mixed-few",
+      "lesson": "6.3",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return exactly one label: delivery, billing, review. Use review if multiple issues are present or the issue is unclear.\nExamples:\nParcel is missing. => delivery\nI was charged twice. => billing\nParcel missing and charged twice. => review\nThanks for your help. => review"
+          },
+          {
+            "role": "user",
+            "content": "No package arrived, and my card shows two charges."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-3-unseen-zero",
+      "lesson": "6.3",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return exactly one label: delivery, billing, review. Use review if multiple issues are present or the issue is unclear."
+          },
+          {
+            "role": "user",
+            "content": "I want to change the email on my account."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-3-unseen-few",
+      "lesson": "6.3",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return exactly one label: delivery, billing, review. Use review if multiple issues are present or the issue is unclear.\nExamples:\nParcel is missing. => delivery\nI was charged twice. => billing\nParcel missing and charged twice. => review\nThanks for your help. => review"
+          },
+          {
+            "role": "user",
+            "content": "I want to change the email on my account."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-4-unknown-prompt-json",
+      "lesson": "6.4",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the exact order ID from the customer text, or null if absent. Classify issueType as delivery, billing or review. Return one JSON object with orderId and issueType."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-0000 never arrived."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-4-unknown-strict",
+      "lesson": "6.4",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the exact order ID from the customer text, or null if absent. Classify issueType as delivery, billing or review. Return one JSON object with orderId and issueType."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-0000 never arrived."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal",
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "ticket",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "orderId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "issueType": {
+                  "type": "string",
+                  "enum": [
+                    "delivery",
+                    "billing",
+                    "review"
+                  ]
+                }
+              },
+              "required": [
+                "orderId",
+                "issueType"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "m06-4-known-strict",
+      "lesson": "6.4",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the exact order ID from the customer text, or null if absent. Classify issueType as delivery, billing or review. Return one JSON object with orderId and issueType."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-1042 still hasn't arrived."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal",
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "ticket",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "orderId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "issueType": {
+                  "type": "string",
+                  "enum": [
+                    "delivery",
+                    "billing",
+                    "review"
+                  ]
+                }
+              },
+              "required": [
+                "orderId",
+                "issueType"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "m06-4-missing-strict",
+      "lesson": "6.4",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the exact order ID from the customer text, or null if absent. Classify issueType as delivery, billing or review. Return one JSON object with orderId and issueType."
+          },
+          {
+            "role": "user",
+            "content": "My parcel is late."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal",
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "ticket",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "orderId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "issueType": {
+                  "type": "string",
+                  "enum": [
+                    "delivery",
+                    "billing",
+                    "review"
+                  ]
+                }
+              },
+              "required": [
+                "orderId",
+                "issueType"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "m06-5-known-extract",
+      "lesson": "6.5",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the exact order ID from the customer text, or null if absent. Classify issueType as delivery, billing or review. Return one JSON object with orderId and issueType."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-1042 still hasn't arrived."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal",
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "ticket",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "orderId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "issueType": {
+                  "type": "string",
+                  "enum": [
+                    "delivery",
+                    "billing",
+                    "review"
+                  ]
+                }
+              },
+              "required": [
+                "orderId",
+                "issueType"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "m06-5-missing-extract",
+      "lesson": "6.5",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Extract the exact order ID from the customer text, or null if absent. Classify issueType as delivery, billing or review. Return one JSON object with orderId and issueType."
+          },
+          {
+            "role": "user",
+            "content": "My parcel is late."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal",
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "ticket",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "orderId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "issueType": {
+                  "type": "string",
+                  "enum": [
+                    "delivery",
+                    "billing",
+                    "review"
+                  ]
+                }
+              },
+              "required": [
+                "orderId",
+                "issueType"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "m06-5-known-draft",
+      "lesson": "6.5",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Store policy: tracking review is available. Refunds and delivery dates are unconfirmed. Draft a customer reply in at most two sentences. Ask for the tracking number. Do not promise a refund or a delivery date."
+          },
+          {
+            "role": "user",
+            "content": "Validated order: ORD-1042; issue: delivery."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      },
+      "condition": {
+        "requires": "m06-5-known-extract",
+        "expectedFields": {
+          "orderId": "ORD-1042",
+          "issueType": "delivery"
+        },
+        "localGate": "Check exact schema, source match, and membership in fictional order store containing ORD-1042. Skip and record reason if any check fails."
+      }
+    },
+    {
+      "id": "m06-6-case1-left",
+      "lesson": "6.6",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Reply to this customer."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-1042 still hasn't arrived."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-6-case1-right",
+      "lesson": "6.6",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Store policy: tracking review is available. Refunds and delivery dates are unconfirmed. Draft a customer reply in at most two sentences. Ask for the tracking number. Do not promise a refund or a delivery date."
+          },
+          {
+            "role": "user",
+            "content": "My parcel for order ORD-1042 still hasn't arrived."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-6-case2-left",
+      "lesson": "6.6",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Store policy: tracking review is available. Refunds and delivery dates are unconfirmed. Draft a customer reply in at most two sentences. Ask for the tracking number. Do not promise a refund or a delivery date."
+          },
+          {
+            "role": "user",
+            "content": "The courier marked it delivered, but I have no parcel."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-6-case2-right",
+      "lesson": "6.6",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Reply to this customer."
+          },
+          {
+            "role": "user",
+            "content": "The courier marked it delivered, but I have no parcel."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-6-case3-left",
+      "lesson": "6.6",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Reply to this customer."
+          },
+          {
+            "role": "user",
+            "content": "I still haven't received order ORD-2020."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    },
+    {
+      "id": "m06-6-case3-right",
+      "lesson": "6.6",
+      "body": {
+        "model": "course-chat",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Store policy: tracking review is available. Refunds and delivery dates are unconfirmed. Draft a customer reply in at most two sentences. Ask for the tracking number. Do not promise a refund or a delivery date."
+          },
+          {
+            "role": "user",
+            "content": "I still haven't received order ORD-2020."
+          }
+        ],
+        "max_completion_tokens": 512,
+        "reasoning_effort": "minimal"
+      }
+    }
+  ]
+}

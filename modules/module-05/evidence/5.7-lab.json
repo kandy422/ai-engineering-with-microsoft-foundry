@@ -1,0 +1,19 @@
+{
+  "request": {
+    "Question": "Where is my order?",
+    "OrderId": "A-1042"
+  },
+  "buggy": {
+    "OrderId": "A-1043",
+    "Status": "Delivered"
+  },
+  "corrected": {
+    "OrderId": "A-1042",
+    "Status": "Delayed"
+  },
+  "expected": "Delayed",
+  "badAnswer": "Order A-1043 is delivered.",
+  "correctedAnswer": "Order A-1042 is delayed.",
+  "badAccepted": false,
+  "correctedAccepted": true
+}

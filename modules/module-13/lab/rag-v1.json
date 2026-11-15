@@ -1,0 +1,4 @@
+[
+  {"id":"pol-01","ranking":["old-faq","returns-v3"],"citation":"returns-v3","reference":"30 days","answer":"60 days","evidence":"Domestic returns are accepted within 30 days."},
+  {"id":"ord-01","ranking":["dispatch-v2","old-faq"],"citation":"dispatch-v2","reference":"escalate","answer":"escalate","evidence":"If dispatched, escalate."}
+]

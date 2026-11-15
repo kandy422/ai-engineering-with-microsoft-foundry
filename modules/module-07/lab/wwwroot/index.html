@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support desk</title>
+<style>
+  :root{color-scheme:dark;background:#050914;color:#f1f6ff;font:18px "Segoe UI",sans-serif}
+  main{max-width:48rem;margin:5vh auto;padding:1rem}
+  h1{font-size:2.6rem;margin-bottom:.3rem} small,#status{color:#a4b5cb}
+  nav,form{display:flex;gap:.75rem;flex-wrap:wrap;margin-block:1.1rem}
+  button,input,select{font:inherit;border:1px solid #456078;background:#0b1527;color:inherit;border-radius:.55rem;padding:.65rem}
+  button[aria-pressed="true"]{border-color:#50e4f5;background:#11283a}
+  button:disabled{opacity:.5} input{flex:1;min-width:15rem}
+  #turns{display:grid;gap:.7rem;min-height:11rem;padding:0}
+  #turns p{background:#0b1527;border:1px solid #25394f;padding:1rem;border-radius:.75rem;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+  #turns p[data-role="assistant"]{border-color:#634a97}
+  label:not([hidden]){display:block} #preview{color:#aa8cff;white-space:pre-wrap}
+</style>
+<main>
+  <small id="mode"></small>
+  <h1>Support desk</h1>
+  <nav aria-label="Conversation sessions">
+    <button type="button" data-session="A" aria-pressed="true">Session A</button>
+    <button type="button" data-session="B" aria-pressed="false">Session B</button>
+    <button type="button" id="reset">Clear current session</button>
+  </nav>
+  <div id="turns" aria-label="Conversation"></div>
+  <p id="preview"></p>
+  <form>
+    <input id="prompt" aria-label="Question" maxlength="1500" required placeholder="Ask about an order">
+    <button id="send">Send</button>
+    <button id="cancel" type="button" disabled>Cancel</button>
+  </form>
+  <label id="simulation" hidden>Local test
+    <select id="scenario">
+      <option value="normal">Normal</option>
+      <option value="throttle">Simulated throttling</option>
+      <option value="timeout">Simulated timeout</option>
+    </select>
+  </label>
+  <p id="status" role="status">Ready</p>
+</main>
+<script type="module" src="/chat.js"></script>
+</html>
+

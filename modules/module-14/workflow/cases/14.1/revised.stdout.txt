@@ -1,0 +1,2 @@
+customer-a: Allow
+customer-b: Deny

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "T-101",
+    "text": "Refund this order please",
+    "expected": "billing"
+  },
+  {
+    "id": "T-102",
+    "text": "I was charged twice and cannot sign in",
+    "expected": "review"
+  },
+  {
+    "id": "T-103",
+    "text": "My package never arrived",
+    "expected": "shipping"
+  },
+  {
+    "id": "T-104",
+    "text": "I cannot sign in",
+    "expected": "account"
+  },
+  {
+    "id": "T-105",
+    "text": "Hello there",
+    "expected": "review"
+  }
+]

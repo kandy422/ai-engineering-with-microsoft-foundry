@@ -1,0 +1,25 @@
+{
+  "lesson": "4.2",
+  "source": "lessons/4.2/walkthrough/walkthrough.py",
+  "sourceSha256": "5e906d114bf56b341257c0b5478afe1a1d3679f67336d49ff62b5cc31f5e9839",
+  "runtime": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "method": "Local subprocess capture. The lesson reconstructs the recorded commands and renders captured stdout verbatim.",
+  "runs": [
+    {
+      "command": "py -3.12 lessons/4.2/walkthrough/walkthrough.py 0",
+      "argv": [
+        "0"
+      ],
+      "stdout": "Correct: 2/4\n(-1, -1) expected 0 predicted 1\n(-1, 1) expected 1 predicted 0\n(1, -1) expected 1 predicted 1\n(1, 1) expected 0 predicted 0",
+      "exitCode": 0
+    },
+    {
+      "command": "py -3.12 lessons/4.2/walkthrough/walkthrough.py 4",
+      "argv": [
+        "4"
+      ],
+      "stdout": "Correct: 4/4\n(-1, -1) expected 0 predicted 0\n(-1, 1) expected 1 predicted 1\n(1, -1) expected 1 predicted 1\n(1, 1) expected 0 predicted 0",
+      "exitCode": 0
+    }
+  ]
+}

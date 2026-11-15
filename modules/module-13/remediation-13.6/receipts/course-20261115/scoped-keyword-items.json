@@ -1,0 +1,968 @@
+[
+  {
+    "object": "eval.run.output_item",
+    "id": "1",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 0,
+    "datasource_item": {
+      "caseId": "hold-01",
+      "query": "How many days do I have to return a domestic purchase?",
+      "slice": "common",
+      "response": "answer:30 days",
+      "reference": "answer:30 days",
+      "evidence": [
+        "returns-v3"
+      ],
+      "context": "How long can I return a domestic order? Domestic returns are accepted within 30 days.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: How many days do I have to return a domestic purchase?\nRetrieved policy: How long can I return a domestic order? Domestic returns are accepted within 30 days.\nCandidate: answer:30 days\nReference outcome: answer:30 days"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate answer to reference outcome. Both state \u002730 days\u0027 as the allowed return period for a domestic purchase, matching exactly.\u0022,\u0022conclusion\u0022:\u0022Candidate matches the reference outcome.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 296,
+            "completion_tokens": 64,
+            "prompt_tokens": 232,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "2",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 1,
+    "datasource_item": {
+      "caseId": "hold-02",
+      "query": "Can I return a domestic order after 20 days?",
+      "slice": "common",
+      "response": "answer:30 days",
+      "reference": "answer:30 days",
+      "evidence": [
+        "returns-v3"
+      ],
+      "context": "How long can I return a domestic order? Domestic returns are accepted within 30 days.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": null,
+        "label": null,
+        "reason": null,
+        "threshold": 1,
+        "passed": null,
+        "status": "error",
+        "sample": {
+          "input": [],
+          "output": [
+            {
+              "role": "assistant",
+              "content": ""
+            }
+          ],
+          "finish_reason": "",
+          "model": "",
+          "usage": null,
+          "error": {
+            "code": "429",
+            "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 1)"
+          }
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "3",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 2,
+    "datasource_item": {
+      "caseId": "hold-03",
+      "query": "What is the window for returning a domestic order?",
+      "slice": "boundary",
+      "response": "answer:30 days",
+      "reference": "answer:30 days",
+      "evidence": [
+        "returns-v3"
+      ],
+      "context": "How long can I return a domestic order? Domestic returns are accepted within 30 days.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: What is the window for returning a domestic order?\nRetrieved policy: How long can I return a domestic order? Domestic returns are accepted within 30 days.\nCandidate: answer:30 days\nReference outcome: answer:30 days"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate\u0027s selected policy outcome with the reference outcome. Both state \u002730 days\u0027 as the return window for domestic orders.\u0022,\u0022conclusion\u0022:\u0022Candidate\u0027s outcome matches the reference exactly.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 295,
+            "completion_tokens": 65,
+            "prompt_tokens": 230,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "4",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 3,
+    "datasource_item": {
+      "caseId": "hold-04",
+      "query": "Cancel the parcel that shipped this morning.",
+      "slice": "risk",
+      "response": "escalate",
+      "reference": "escalate",
+      "evidence": [
+        "dispatch-v2"
+      ],
+      "context": "Cancel a parcel that already shipped. Escalate the request.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": null,
+        "label": null,
+        "reason": null,
+        "threshold": 1,
+        "passed": null,
+        "status": "error",
+        "sample": {
+          "input": [],
+          "output": [
+            {
+              "role": "assistant",
+              "content": ""
+            }
+          ],
+          "finish_reason": "",
+          "model": "",
+          "usage": null,
+          "error": {
+            "code": "429",
+            "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 3)"
+          }
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "5",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 4,
+    "datasource_item": {
+      "caseId": "hold-05",
+      "query": "My order has shipped. Can you cancel it?",
+      "slice": "risk",
+      "response": "escalate",
+      "reference": "escalate",
+      "evidence": [
+        "dispatch-v2"
+      ],
+      "context": "Cancel a parcel that already shipped. Escalate the request.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": null,
+        "label": null,
+        "reason": null,
+        "threshold": 1,
+        "passed": null,
+        "status": "error",
+        "sample": {
+          "input": [],
+          "output": [
+            {
+              "role": "assistant",
+              "content": ""
+            }
+          ],
+          "finish_reason": "",
+          "model": "",
+          "usage": null,
+          "error": {
+            "code": "429",
+            "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 4)"
+          }
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "6",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 5,
+    "datasource_item": {
+      "caseId": "hold-06",
+      "query": "I want to cancel a shipped order.",
+      "slice": "risk",
+      "response": "escalate",
+      "reference": "escalate",
+      "evidence": [
+        "dispatch-v2"
+      ],
+      "context": "Cancel a parcel that already shipped. Escalate the request.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: I want to cancel a shipped order.\nRetrieved policy: Cancel a parcel that already shipped. Escalate the request.\nCandidate: escalate\nReference outcome: escalate"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate outcome to reference outcome. Both are \u0027escalate\u0027.\u0022,\u0022conclusion\u0022:\u0022They match.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 267,
+            "completion_tokens": 50,
+            "prompt_tokens": 217,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "7",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 6,
+    "datasource_item": {
+      "caseId": "hold-07",
+      "query": "Cancel the processing order after verification.",
+      "slice": "common",
+      "response": "cancel",
+      "reference": "cancel",
+      "evidence": [
+        "cancel-v2"
+      ],
+      "context": "Cancel a processing order after verification.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": null,
+        "label": null,
+        "reason": null,
+        "threshold": 1,
+        "passed": null,
+        "status": "error",
+        "sample": {
+          "input": [],
+          "output": [
+            {
+              "role": "assistant",
+              "content": ""
+            }
+          ],
+          "finish_reason": "",
+          "model": "",
+          "usage": null,
+          "error": {
+            "code": "429",
+            "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 6)"
+          }
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "8",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 7,
+    "datasource_item": {
+      "caseId": "hold-08",
+      "query": "Can you cancel a processing parcel after verification?",
+      "slice": "common",
+      "response": "cancel",
+      "reference": "cancel",
+      "evidence": [
+        "cancel-v2"
+      ],
+      "context": "Cancel a processing order after verification.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: Can you cancel a processing parcel after verification?\nRetrieved policy: Cancel a processing order after verification.\nCandidate: cancel\nReference outcome: cancel"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate\u0027s selected policy outcome to the reference outcome. Both the candidate and the reference outcome are \u0027cancel\u0027.\u0022,\u0022conclusion\u0022:\u0022They match exactly.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 271,
+            "completion_tokens": 59,
+            "prompt_tokens": 212,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "9",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 8,
+    "datasource_item": {
+      "caseId": "hold-09",
+      "query": "Cancel a verified order that is still processing.",
+      "slice": "common",
+      "response": "cancel",
+      "reference": "cancel",
+      "evidence": [
+        "cancel-v2"
+      ],
+      "context": "Cancel a processing order after verification.",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": null,
+        "label": null,
+        "reason": null,
+        "threshold": 1,
+        "passed": null,
+        "status": "error",
+        "sample": {
+          "input": [],
+          "output": [
+            {
+              "role": "assistant",
+              "content": ""
+            }
+          ],
+          "finish_reason": "",
+          "model": "",
+          "usage": null,
+          "error": {
+            "code": "429",
+            "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 8)"
+          }
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "10",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 9,
+    "datasource_item": {
+      "caseId": "hold-10",
+      "query": "How do I return an order from abroad?",
+      "slice": "unanswerable",
+      "response": "ask-for-policy",
+      "reference": "ask-for-policy",
+      "evidence": [],
+      "context": "",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: How do I return an order from abroad?\nRetrieved policy: \nCandidate: ask-for-policy\nReference outcome: ask-for-policy"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate outcome to reference outcome. Both are \u0027ask-for-policy\u0027.\u0022,\u0022conclusion\u0022:\u0022They match.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 260,
+            "completion_tokens": 50,
+            "prompt_tokens": 210,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "11",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 10,
+    "datasource_item": {
+      "caseId": "hold-11",
+      "query": "How long do I have to return a purchase from abroad?",
+      "slice": "unanswerable",
+      "response": "ask-for-policy",
+      "reference": "ask-for-policy",
+      "evidence": [],
+      "context": "",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": 1,
+        "passed": true,
+        "status": "completed",
+        "sample": {
+          "input": [
+            {
+              "role": "system",
+              "content": "Score this fictional support decision. Give 1 only if the candidate selects the same policy outcome as the reference, preserving any stated time limit. With missing evidence, asking for the policy is correct when the reference asks for it. Otherwise give 0. Return only the score."
+            },
+            {
+              "role": "user",
+              "content": "Question: How long do I have to return a purchase from abroad?\nRetrieved policy: \nCandidate: ask-for-policy\nReference outcome: ask-for-policy"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\u0022steps\u0022:[{\u0022description\u0022:\u0022Compare candidate decision to reference outcome. Both the candidate and the reference outcome are \u0027ask-for-policy\u0027.\u0022,\u0022conclusion\u0022:\u0022They match exactly.\u0022}],\u0022result\u0022:1.0}"
+            }
+          ],
+          "finish_reason": "stop",
+          "model": "gpt-5-mini-2025-08-07",
+          "usage": {
+            "total_tokens": 270,
+            "completion_tokens": 57,
+            "prompt_tokens": 213,
+            "cached_tokens": 0
+          },
+          "error": null,
+          "temperature": 1,
+          "top_p": 1,
+          "max_completions_tokens": 1024
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  },
+  {
+    "object": "eval.run.output_item",
+    "id": "12",
+    "run_id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+    "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+    "created_at": 1794714778,
+    "status": "completed",
+    "datasource_item_id": 11,
+    "datasource_item": {
+      "caseId": "hold-12",
+      "query": "Can I return an overseas order from abroad?",
+      "slice": "unanswerable",
+      "response": "ask-for-policy",
+      "reference": "ask-for-policy",
+      "evidence": [],
+      "context": "",
+      "version": "scoped-keyword"
+    },
+    "results": [
+      {
+        "type": "string_check",
+        "name": "exact-outcome",
+        "metric": "exact-outcome",
+        "score": 1,
+        "label": "pass",
+        "reason": null,
+        "threshold": null,
+        "passed": true,
+        "status": "completed"
+      },
+      {
+        "type": "score_model",
+        "name": "policy-outcome-judge",
+        "metric": "policy-outcome-judge",
+        "score": null,
+        "label": null,
+        "reason": null,
+        "threshold": 1,
+        "passed": null,
+        "status": "error",
+        "sample": {
+          "input": [],
+          "output": [
+            {
+              "role": "assistant",
+              "content": ""
+            }
+          ],
+          "finish_reason": "",
+          "model": "",
+          "usage": null,
+          "error": {
+            "code": "429",
+            "message": "Your requests to gpt-5-mini for course-chat in eastus2 have exceeded request rate limit. (provider run eval_6af92c4b61b081919eefb282d4572016/evalrun_6af92c4dbe0c819181dfa8c2ff37ac47, eval_6af92c4fc7ec81918f03a773836f8108/evalrun_6af92c54b27081918b485c7d6258692e; item 11)"
+          }
+        }
+      }
+    ],
+    "sample": {
+      "error": null,
+      "finish_reason": "",
+      "input": [],
+      "max_completion_tokens": null,
+      "model": "",
+      "output": [],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": null,
+      "latency_ms": null
+    }
+  }
+]

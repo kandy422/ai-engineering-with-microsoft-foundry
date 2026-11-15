@@ -1,0 +1,14 @@
+[
+  {
+    "weight": 1,
+    "weighted": 1.75,
+    "z": -0.25,
+    "score": 0
+  },
+  {
+    "weight": 3,
+    "weighted": 3.75,
+    "z": 1.75,
+    "score": 1.75
+  }
+]

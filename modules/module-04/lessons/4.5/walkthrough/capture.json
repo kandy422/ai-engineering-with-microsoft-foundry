@@ -1,0 +1,27 @@
+{
+  "lesson": "4.5",
+  "source": "lessons/4.5/walkthrough/walkthrough.py",
+  "sourceSha256": "5346ec14ce7ebdadc76a00e9a78bf4f1d072e5efcfdc8e5f814abf607a22e837",
+  "runtime": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "method": "Local subprocess capture. The lesson reconstructs the recorded commands and renders captured stdout verbatim.",
+  "runs": [
+    {
+      "command": "py -3.12 lessons/4.5/walkthrough/walkthrough.py reset password",
+      "argv": [
+        "reset",
+        "password"
+      ],
+      "stdout": "slot 1: reset [2, 1, 0]\nslot 2: password [1, 2, 0]",
+      "exitCode": 0
+    },
+    {
+      "command": "py -3.12 lessons/4.5/walkthrough/walkthrough.py password reset",
+      "argv": [
+        "password",
+        "reset"
+      ],
+      "stdout": "slot 1: password [0, 2, 1]\nslot 2: reset [3, 1, -1]",
+      "exitCode": 0
+    }
+  ]
+}

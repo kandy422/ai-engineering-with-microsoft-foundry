@@ -1,0 +1,15 @@
+{
+  "model": "course-chat",
+  "messages": [
+    {
+      "role": "developer",
+      "content": "Answer from the policy in at most two sentences. If customer facts are needed, ask for them. If the policy lacks the answer, say it is not specified."
+    },
+    {
+      "role": "user",
+      "content": "Returns policy: Standard items can be returned within 30 days of delivery. Final-sale items cannot be returned.\nQuestion: Can I return my item?"
+    }
+  ],
+  "max_completion_tokens": 512,
+  "reasoning_effort": "low"
+}

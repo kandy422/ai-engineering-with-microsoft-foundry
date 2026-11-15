@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "I’m sorry — that’s frustrating. I’ll help get this sorted. To start, could you tell me:\n\n- Your order number or tracking number\n- The courier name (if known)\n- The address on the order (confirming the delivery address)\n- When the tracking shows it was marked delivered\n- Whether you’ve checked with neighbors, building management, or a parcel room\n\nOnce I have those details I’ll contact the courier and investigate. In the meantime, please check around the property (porch, garage, side door), any safe places the driver might leave parcels, and any “photo of delivery” in the tracking updates. If you prefer, I can also open a missing-delivery claim for you right away — let me know and I’ll proceed.",
+        "refusal": null
+      }
+    }
+  ]
+}

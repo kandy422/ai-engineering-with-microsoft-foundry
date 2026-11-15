@@ -1,0 +1,20 @@
+{
+  "lesson": "8.5",
+  "source": "Recorded managed instructor run",
+  "sourceModel": "gpt-4.1-mini-2025-04-14",
+  "epochs": 3,
+  "trainedTokens": 5208,
+  "cases": 12,
+  "baseCorrect": 12,
+  "adaptedCorrect": 11,
+  "baseOnlyCorrect": 1,
+  "adaptedOnlyCorrect": 0,
+  "example": {
+    "id": "test-08",
+    "ticket": "One tube should contain all three poster rolls, but the seal is broken and a roll is missing.",
+    "expected": "DELIVERY",
+    "base": "DELIVERY",
+    "adapted": "RETURNS"
+  },
+  "interpretation": "The adapted model added one miss on this small held-out set. Keep the base model for this exercise and collect representative regression cases before revisiting promotion."
+}

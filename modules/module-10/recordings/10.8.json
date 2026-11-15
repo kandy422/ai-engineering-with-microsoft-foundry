@@ -1,0 +1,248 @@
+{
+  "stable": {
+    "api": "2026-04-01",
+    "requestBody": {
+      "intents": [
+        {
+          "type": "semantic",
+          "search": "What is the return window for an unopened accessory?"
+        }
+      ],
+      "knowledgeSourceParams": [
+        {
+          "knowledgeSourceName": "course10-20261115-stable-source",
+          "kind": "searchIndex",
+          "includeReferences": true,
+          "includeReferenceSourceData": true
+        }
+      ],
+      "maxOutputSizeInTokens": 5001,
+      "maxRuntimeInSeconds": 30
+    },
+    "receipt": {
+      "status": 200,
+      "requestId": "94da7da3-0470-403b-9e7b-86a6dbb0c32b",
+      "date": "2026-11-15T09:24:57+05:30"
+    },
+    "response": {
+      "@odata.context": "https://pp-ai-course-search-ac7hzq.search.windows.net/$metadata#Microsoft.WindowsAzure.Search.Core.Models.V2026_04_01.Agents.AgentRetrievalResponse",
+      "response": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "[{\"ref_id\":0,\"title\":\"Unopened accessory return policy\",\"content\":\"Unopened accessories can be returned within 30 days.\"},{\"ref_id\":1,\"title\":\"Opened accessory return policy\",\"content\":\"Opened accessories are eligible for a return only if defective.\"}]"
+            }
+          ]
+        }
+      ],
+      "activity": [
+        {
+          "type": "searchIndex",
+          "id": 0,
+          "knowledgeSourceName": "course10-20261115-stable-source",
+          "queryTime": "2026-11-15T03:54:57.2429219Z",
+          "count": 2,
+          "elapsedMs": 360,
+          "searchIndexArguments": {
+            "search": "What is the return window for an unopened accessory?",
+            "filter": null,
+            "semanticConfigurationName": "policy",
+            "sourceDataFields": [
+              {
+                "name": "title"
+              },
+              {
+                "name": "content"
+              },
+              {
+                "name": "id"
+              },
+              {
+                "name": "marker"
+              }
+            ],
+            "searchFields": []
+          }
+        },
+        {
+          "type": "agenticReasoning",
+          "id": 1,
+          "reasoningTokens": 27
+        }
+      ],
+      "references": [
+        {
+          "type": "searchIndex",
+          "id": "0",
+          "activitySource": 0,
+          "rerankerScore": 2.5792027,
+          "docKey": "returns-unopened",
+          "title": "Unopened accessory return policy",
+          "sourceData": {
+            "id": "returns-unopened",
+            "title": "Unopened accessory return policy",
+            "content": "Unopened accessories can be returned within 30 days.",
+            "marker": "course10-public-control"
+          }
+        },
+        {
+          "type": "searchIndex",
+          "id": "1",
+          "activitySource": 0,
+          "rerankerScore": 2.054411,
+          "docKey": "returns-opened",
+          "title": "Opened accessory return policy",
+          "sourceData": {
+            "id": "returns-opened",
+            "title": "Opened accessory return policy",
+            "content": "Opened accessories are eligible for a return only if defective.",
+            "marker": ""
+          }
+        }
+      ]
+    }
+  },
+  "aclApi": "2026-08-01-preview",
+  "aclScope": "One delegated user before grant, after grant, and after revocation",
+  "acl": [
+    {
+      "requestId": [
+        "4002bbd5-6764-4e0d-80d2-acc61f9678e1"
+      ],
+      "stage": "denied",
+      "references": [
+        {
+          "type": "searchIndex",
+          "id": "0",
+          "activitySource": 0,
+          "rerankerScore": 3.8359325,
+          "docKey": "returns-unopened",
+          "title": "Unopened accessory return policy",
+          "citationUrl": "https://pp-ai-course-search-ac7hzq.search.windows.net/indexes/course10-20261115-acl-index/docs/returns-unopened?$select=title%2Ccontent%2Cid%2Cmarker&api-version=2026-08-01-preview&allowUnsafeKeys=true",
+          "sourceData": {
+            "id": "returns-unopened",
+            "title": "Unopened accessory return policy",
+            "content": "Unopened accessories can be returned within 30 days.",
+            "marker": "course10-public-control"
+          }
+        },
+        {
+          "type": "searchIndex",
+          "id": "1",
+          "activitySource": 0,
+          "rerankerScore": 2.321534,
+          "docKey": "returns-opened",
+          "title": "Opened accessory return policy",
+          "citationUrl": "https://pp-ai-course-search-ac7hzq.search.windows.net/indexes/course10-20261115-acl-index/docs/returns-opened?$select=title%2Ccontent%2Cid%2Cmarker&api-version=2026-08-01-preview&allowUnsafeKeys=true",
+          "sourceData": {
+            "id": "returns-opened",
+            "title": "Opened accessory return policy",
+            "content": "Opened accessories are eligible for a return only if defective.",
+            "marker": ""
+          }
+        }
+      ],
+      "restrictedReference": false,
+      "publicControl": true,
+      "status": 200
+    },
+    {
+      "requestId": [
+        "75d92ef2-63b4-49ab-a8f3-d74afb5ea85c"
+      ],
+      "stage": "granted",
+      "references": [
+        {
+          "type": "searchIndex",
+          "id": "0",
+          "activitySource": 0,
+          "rerankerScore": 3.837368,
+          "docKey": "returns-unopened",
+          "title": "Unopened accessory return policy",
+          "citationUrl": "https://pp-ai-course-search-ac7hzq.search.windows.net/indexes/course10-20261115-acl-index/docs/returns-unopened?$select=title%2Ccontent%2Cid%2Cmarker&api-version=2026-08-01-preview&allowUnsafeKeys=true",
+          "sourceData": {
+            "id": "returns-unopened",
+            "title": "Unopened accessory return policy",
+            "content": "Unopened accessories can be returned within 30 days.",
+            "marker": "course10-public-control"
+          }
+        },
+        {
+          "type": "searchIndex",
+          "id": "1",
+          "activitySource": 0,
+          "rerankerScore": 3.8108156,
+          "docKey": "returns-unopened-internal",
+          "title": "Unopened accessory return policy handling",
+          "citationUrl": "https://pp-ai-course-search-ac7hzq.search.windows.net/indexes/course10-20261115-acl-index/docs/returns-unopened-internal?$select=title%2Ccontent%2Cid%2Cmarker&api-version=2026-08-01-preview&allowUnsafeKeys=true",
+          "sourceData": {
+            "id": "returns-unopened-internal",
+            "title": "Unopened accessory return policy handling",
+            "content": "For an unopened accessory return under the 30 day window, staff route a returned parcel to fictional inspection station Indigo.",
+            "marker": "course10-restricted-control"
+          }
+        },
+        {
+          "type": "searchIndex",
+          "id": "2",
+          "activitySource": 0,
+          "rerankerScore": 2.3422067,
+          "docKey": "returns-opened",
+          "title": "Opened accessory return policy",
+          "citationUrl": "https://pp-ai-course-search-ac7hzq.search.windows.net/indexes/course10-20261115-acl-index/docs/returns-opened?$select=title%2Ccontent%2Cid%2Cmarker&api-version=2026-08-01-preview&allowUnsafeKeys=true",
+          "sourceData": {
+            "id": "returns-opened",
+            "title": "Opened accessory return policy",
+            "content": "Opened accessories are eligible for a return only if defective.",
+            "marker": ""
+          }
+        }
+      ],
+      "restrictedReference": true,
+      "publicControl": true,
+      "status": 200
+    },
+    {
+      "requestId": [
+        "21d973e9-7f96-467b-bb31-59860bf23af5"
+      ],
+      "stage": "revoked",
+      "references": [
+        {
+          "type": "searchIndex",
+          "id": "0",
+          "activitySource": 0,
+          "rerankerScore": 3.8359325,
+          "docKey": "returns-unopened",
+          "title": "Unopened accessory return policy",
+          "citationUrl": "https://pp-ai-course-search-ac7hzq.search.windows.net/indexes/course10-20261115-acl-index/docs/returns-unopened?$select=title%2Ccontent%2Cid%2Cmarker&api-version=2026-08-01-preview&allowUnsafeKeys=true",
+          "sourceData": {
+            "id": "returns-unopened",
+            "title": "Unopened accessory return policy",
+            "content": "Unopened accessories can be returned within 30 days.",
+            "marker": "course10-public-control"
+          }
+        },
+        {
+          "type": "searchIndex",
+          "id": "1",
+          "activitySource": 0,
+          "rerankerScore": 2.321534,
+          "docKey": "returns-opened",
+          "title": "Opened accessory return policy",
+          "citationUrl": "https://pp-ai-course-search-ac7hzq.search.windows.net/indexes/course10-20261115-acl-index/docs/returns-opened?$select=title%2Ccontent%2Cid%2Cmarker&api-version=2026-08-01-preview&allowUnsafeKeys=true",
+          "sourceData": {
+            "id": "returns-opened",
+            "title": "Opened accessory return policy",
+            "content": "Opened accessories are eligible for a return only if defective.",
+            "marker": ""
+          }
+        }
+      ],
+      "restrictedReference": false,
+      "publicControl": true,
+      "status": 200
+    }
+  ]
+}

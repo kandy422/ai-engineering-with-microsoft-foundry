@@ -1,0 +1,8 @@
+{
+  "startedUtc": "2026-11-15T03:55:42.7826907+00:00",
+  "method": "POST",
+  "endpoint": "/openai/v1/chat/completions",
+  "status": 200,
+  "elapsedMs": 2930,
+  "responseSha256": "A0DAE0463BECAE5D2C7841576D2CC18CAAA93B008E86DA16B3131DC25FE0A6A7"
+}

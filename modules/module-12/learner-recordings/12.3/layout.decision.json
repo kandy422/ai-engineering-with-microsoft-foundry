@@ -1,0 +1,139 @@
+{
+  "tableCount": 0,
+  "tables": [],
+  "lines": [
+    {
+      "content": "LUMEN HOME",
+      "polygon": [
+        65,
+        44,
+        392,
+        43,
+        392,
+        85,
+        65,
+        85
+      ],
+      "spans": [
+        {
+          "offset": 0,
+          "length": 10
+        }
+      ]
+    },
+    {
+      "content": "ORDER 048271",
+      "polygon": [
+        66,
+        112,
+        411,
+        112,
+        411,
+        153,
+        66,
+        154
+      ],
+      "spans": [
+        {
+          "offset": 11,
+          "length": 12
+        }
+      ]
+    },
+    {
+      "content": "DATE 2026-11-02",
+      "polygon": [
+        66,
+        181,
+        468,
+        180,
+        468,
+        223,
+        66,
+        224
+      ],
+      "spans": [
+        {
+          "offset": 24,
+          "length": 15
+        }
+      ]
+    },
+    {
+      "content": "KETTLE 40.00",
+      "polygon": [
+        65,
+        319,
+        380,
+        319,
+        381,
+        361,
+        65,
+        361
+      ],
+      "spans": [
+        {
+          "offset": 40,
+          "length": 12
+        }
+      ]
+    },
+    {
+      "content": "SUBTOTAL 40.00",
+      "polygon": [
+        65,
+        388,
+        452,
+        388,
+        452,
+        430,
+        65,
+        430
+      ],
+      "spans": [
+        {
+          "offset": 53,
+          "length": 14
+        }
+      ]
+    },
+    {
+      "content": "TAX 4.00",
+      "polygon": [
+        65,
+        457,
+        265,
+        457,
+        265,
+        499,
+        65,
+        498
+      ],
+      "spans": [
+        {
+          "offset": 68,
+          "length": 8
+        }
+      ]
+    },
+    {
+      "content": "TOTAL 44.00",
+      "polygon": [
+        65,
+        526,
+        353,
+        526,
+        353,
+        568,
+        65,
+        567
+      ],
+      "spans": [
+        {
+          "offset": 77,
+          "length": 11
+        }
+      ]
+    }
+  ]
+}

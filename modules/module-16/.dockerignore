@@ -1,0 +1,9 @@
+**
+!NuGet.Config
+!lab/
+!lab/*.cs
+!lab/Capstone.csproj
+!lab/policies/
+!lab/policies/**
+!lab/wwwroot/
+!lab/wwwroot/**

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support Desk | Capstone</title>
+  <link rel="stylesheet" href="/hosted/desk.css">
+  <script defer src="/hosted/vendor/msal-browser-4.30.0.min.js"></script>
+  <script defer src="/hosted/desk.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Support desk</h1>
+      <p id="session" role="status">Loading sign-in…</p>
+      <button id="sign-in" type="button" disabled>Sign in with Microsoft</button>
+      <button id="sign-out" type="button" hidden>Sign out</button>
+    </header>
+    <fieldset id="desk" disabled>
+      <legend>Support tools</legend>
+      <form id="answer">
+        <h2>Ask about a policy</h2>
+        <label for="question">Question</label>
+        <textarea id="question" rows="3" maxlength="1500" required></textarea>
+        <button>Ask</button>
+        <output aria-live="polite"></output>
+      </form>
+      <form id="order">
+        <h2>Look up an order</h2>
+        <label for="order-id">Order ID</label>
+        <input id="order-id" pattern="ORD-[0-9]{4}" placeholder="ORD-1042" required>
+        <button>Look up</button>
+        <output aria-live="polite"></output>
+      </form>
+      <form id="receipt" hidden>
+        <h2>Check a receipt</h2>
+        <label for="receipt-order">Order ID</label>
+        <input id="receipt-order" pattern="ORD-[0-9]{4}" placeholder="ORD-1042" required>
+        <label for="receipt-file">Receipt image (PNG or JPEG, up to 100 KB)</label>
+        <input id="receipt-file" type="file" accept="image/png,image/jpeg" required>
+        <button>Verify receipt</button>
+        <output aria-live="polite"></output>
+      </form>
+      <form id="callback">
+        <h2>Request a callback</h2>
+        <label for="ticket">Ticket ID</label>
+        <input id="ticket" pattern="T-[0-9]{1,6}" placeholder="T-17" required>
+        <button id="propose">Prepare request</button>
+        <button id="approve" type="button" hidden>Approve callback</button>
+        <output aria-live="polite"></output>
+      </form>
+    </fieldset>
+  </main>
+</body>
+</html>

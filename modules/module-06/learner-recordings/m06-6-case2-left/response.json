@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "Sorry to hear that — we can open a tracking review to help locate your parcel; could you please provide the tracking number? We’ll investigate with the courier and update you as soon as we have information.",
+        "refusal": null
+      }
+    }
+  ]
+}

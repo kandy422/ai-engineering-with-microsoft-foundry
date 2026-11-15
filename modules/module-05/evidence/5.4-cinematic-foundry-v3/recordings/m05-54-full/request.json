@@ -1,0 +1,19 @@
+{
+  "model": "course-chat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "My order ID is A-1042."
+    },
+    {
+      "role": "assistant",
+      "content": "I can help with the delivery."
+    },
+    {
+      "role": "user",
+      "content": "Return only the exact order ID from the earlier user messages. If no order ID is present, return MISSING."
+    }
+  ],
+  "max_completion_tokens": 512,
+  "reasoning_effort": "low"
+}

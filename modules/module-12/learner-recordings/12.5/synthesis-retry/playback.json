@@ -1,0 +1,7 @@
+{
+  "startedUtc": "2026-11-15T04:13:25.0888802+00:00",
+  "sourceSeconds": 4.925,
+  "startCallReturned": true,
+  "trigger": "scripted-timer",
+  "stopAfterMs": 1400
+}

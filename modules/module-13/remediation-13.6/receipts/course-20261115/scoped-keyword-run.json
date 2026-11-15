@@ -1,0 +1,23 @@
+{
+  "id": "evalrun_a08b2b42e9044139a9a33ae5448f3c5c",
+  "eval_id": "eval_7368eaeb617845f19114aec81ec87645",
+  "status": "completed",
+  "per_model_usage": [
+    {
+      "model_name": "gpt-5-mini-2025-08-07",
+      "invocation_count": 6,
+      "total_tokens": 1659,
+      "prompt_tokens": 1314,
+      "completion_tokens": 345,
+      "cached_tokens": 0
+    },
+    {
+      "model_name": "azure_ai_evaluation",
+      "invocation_count": 6,
+      "total_tokens": 1659,
+      "prompt_tokens": 1314,
+      "completion_tokens": 345,
+      "cached_tokens": 0
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  {"id":"pol-01","family":"domestic-return","split":"dev","slice":"common","query":"How long can I return a domestic order?","expectedEvidence":["returns-v3"],"allowedActions":[],"expectedOutcome":"answer:30 days"},
+  {"id":"ord-01","family":"dispatched-cancel","split":"holdout","slice":"edge","query":"Cancel my parcel that already shipped.","expectedEvidence":["dispatch-v2"],"allowedActions":[],"expectedOutcome":"escalate"},
+  {"id":"pol-02","family":"crossborder-return","split":"holdout","slice":"unanswerable","query":"How long can I return an order from abroad?","expectedEvidence":[],"allowedActions":[],"expectedOutcome":"ask-for-policy"},
+  {"id":"ord-02","family":"processing-cancel","split":"holdout","slice":"common","query":"Cancel processing order A17 after verification.","expectedEvidence":["cancel-v2"],"allowedActions":["cancel_order"],"expectedOutcome":"cancel"}
+]

@@ -1,0 +1,8 @@
+[
+  {"name":"ticket.txt","mime":"text/plain","task":"summarize","bytes":220},
+  {"name":"damage.jpg","mime":"image/jpeg","task":"inspect","bytes":84200},
+  {"name":"receipt.jpg","mime":"image/jpeg","task":"extract","bytes":65000},
+  {"name":"request.wav","mime":"audio/wav","task":"transcribe","bytes":92200},
+  {"name":"walkaround.mp4","mime":"video/mp4","task":"inspect","bytes":900000},
+  {"name":"oversize.jpg","mime":"image/jpeg","task":"inspect","bytes":2500000}
+]

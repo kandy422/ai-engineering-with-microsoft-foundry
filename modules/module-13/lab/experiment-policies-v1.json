@@ -1,0 +1,5 @@
+[
+  {"id":"returns-v3","scope":"domestic-return","text":"How long can I return a domestic order? Domestic returns are accepted within 30 days.","outcome":"answer:30 days"},
+  {"id":"dispatch-v2","scope":"dispatched-cancel","text":"Cancel a parcel that already shipped. Escalate the request.","outcome":"escalate"},
+  {"id":"cancel-v2","scope":"processing-cancel","text":"Cancel a processing order after verification.","outcome":"cancel"}
+]

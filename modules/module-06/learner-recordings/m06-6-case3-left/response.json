@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5-mini-2025-08-07",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "message": {
+        "content": "I'm sorry you haven’t received your order — I can help with that.\n\nCould you confirm a couple quick details so I can look into it for you?\n- Full name on the order\n- The shipping address (or the last 4 digits of it)\n- Best phone or email to reach you, if different from your account\n\nI’ll check our system for the current status and estimated delivery and get back to you right away. If you prefer, I can also open an investigation with the carrier and request tracking updates or a replacement/refund depending on what we find. Which option would you prefer?",
+        "refusal": null
+      }
+    }
+  ]
+}

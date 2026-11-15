@@ -1,0 +1,11 @@
+{
+  "model": "course-chat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write exactly 12 numbered lines. On each line, write one distinct customer-support greeting of at least eight words. Start immediately with line 1."
+    }
+  ],
+  "max_completion_tokens": 1024,
+  "reasoning_effort": "low"
+}

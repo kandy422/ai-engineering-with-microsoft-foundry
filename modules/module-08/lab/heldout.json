@@ -1,0 +1,20 @@
+[
+  {
+    "id": "heldout-billing",
+    "task": "route",
+    "prompt": "Route customer support tickets. Reply with exactly one label: BILLING, DELIVERY, or RETURNS. Ticket: I see an extra charge on my statement after checkout.",
+    "expected": "BILLING"
+  },
+  {
+    "id": "heldout-delivery",
+    "task": "route",
+    "prompt": "Route customer support tickets. Reply with exactly one label: BILLING, DELIVERY, or RETURNS. Ticket: The order still hasn't reached my front desk.",
+    "expected": "DELIVERY"
+  },
+  {
+    "id": "heldout-returns",
+    "task": "route",
+    "prompt": "Route customer support tickets. Reply with exactly one label: BILLING, DELIVERY, or RETURNS. Ticket: I changed my mind. Can I give the product back?",
+    "expected": "RETURNS"
+  }
+]

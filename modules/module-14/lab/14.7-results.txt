@@ -1,0 +1,39 @@
+
+gate
+Authorised lookup => Allowed
+Unsupported capability fixture => Denied
+Suspect document fixture => Review
+
+documents
+North delivery policy => Included
+North staff policy => Excluded
+
+orders
+A-104 / same owner => Allowed
+A-105 / different owner => Denied
+B-104 / different tenant => Denied
+
+privacy
+Telemetry => {"outcome":"resolved"}
+Private values in telemetry => Absent
+
+deletion
+Remaining store + cache entries => 0
+Entries after repeat => 0
+
+routes
+Allow => Continue
+Block => Support
+Unavailable => Human review
+
+pair
+What is my delivery status? => Delivery status
+Any news on my parcel? => Review
+
+approval
+Action with matching approval => Allowed
+Action with different approval => Denied
+
+release
+Required live deployment evidence => Pending
+Release decision => Hold

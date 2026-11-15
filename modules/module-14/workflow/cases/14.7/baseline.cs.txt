@@ -1,0 +1,10 @@
+var approved = "request-104";
+var inputs = new[] { "request-104", "request-105" };
+var liveEvidenceVerified = false;
+
+foreach (var value in inputs)
+    Console.WriteLine($"{value}: {(Permit(value) ? "Allow" : "Deny")}");
+Console.WriteLine($"Release: {(liveEvidenceVerified ? "Proceed" : "Hold")}");
+
+bool Permit(string value) =>
+    false;

@@ -1,0 +1,3 @@
+north/customer: Include
+north/staff: Exclude
+south/customer: Exclude

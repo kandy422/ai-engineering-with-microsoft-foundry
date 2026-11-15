@@ -1,0 +1,20 @@
+{
+  "source": "../../coordination/cloud-lab/recordings/m09-embed-01",
+  "sha256": {
+    "request.json": "eff281af662bab482d3d8e9c1aa9e63ffd759fbffd4d6dfb77bf527f56c7564b",
+    "response.json": "8bb50fb7050e94922b7c6a5aa869590c64207b7888f95a89d695132a516fa425",
+    "receipt.json": "8a89e3f519c3dcce2486f8aedd9d14f63d4db0c0fbde849157b7780c99340b13"
+  },
+  "inputIds": [
+    "question",
+    "paraphrase",
+    "deadline",
+    "policy",
+    "unrelated"
+  ],
+  "requestId": "fc5631c9-c211-40b1-ba64-d65d196b44c3",
+  "usage": {
+    "prompt_tokens": 53,
+    "total_tokens": 53
+  }
+}

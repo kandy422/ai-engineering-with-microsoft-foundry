@@ -1,0 +1,252 @@
+{
+  "decision": {
+    "State": "validated",
+    "Reason": "required fields and arithmetic passed"
+  },
+  "fields": {
+    "CountryRegion": {
+      "type": "countryRegion",
+      "valueCountryRegion": "USA",
+      "confidence": 0.995
+    },
+    "Items": {
+      "type": "array",
+      "valueArray": [
+        {
+          "type": "object",
+          "valueObject": {
+            "Description": {
+              "type": "string",
+              "valueString": "KETTLE",
+              "content": "KETTLE",
+              "boundingRegions": [
+                {
+                  "pageNumber": 1,
+                  "polygon": [
+                    65,
+                    320,
+                    245,
+                    319,
+                    245,
+                    361,
+                    65,
+                    361
+                  ]
+                }
+              ],
+              "confidence": 0.995,
+              "spans": [
+                {
+                  "offset": 40,
+                  "length": 6
+                }
+              ]
+            },
+            "TotalPrice": {
+              "type": "currency",
+              "valueCurrency": {
+                "amount": 40.0,
+                "currencyCode": "USD"
+              },
+              "content": "40.00",
+              "boundingRegions": [
+                {
+                  "pageNumber": 1,
+                  "polygon": [
+                    260,
+                    319,
+                    381,
+                    319,
+                    381,
+                    361,
+                    260,
+                    361
+                  ]
+                }
+              ],
+              "confidence": 0.995,
+              "spans": [
+                {
+                  "offset": 47,
+                  "length": 5
+                }
+              ]
+            }
+          },
+          "content": "KETTLE 40.00",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                65,
+                319,
+                381,
+                319,
+                381,
+                361,
+                65,
+                361
+              ]
+            }
+          ],
+          "confidence": 0.995,
+          "spans": [
+            {
+              "offset": 40,
+              "length": 12
+            }
+          ]
+        }
+      ]
+    },
+    "MerchantName": {
+      "type": "string",
+      "valueString": "LUMEN HOME",
+      "content": "LUMEN HOME",
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            65,
+            43,
+            392,
+            43,
+            392,
+            85,
+            65,
+            85
+          ]
+        }
+      ],
+      "confidence": 0.993,
+      "spans": [
+        {
+          "offset": 0,
+          "length": 10
+        }
+      ]
+    },
+    "ReceiptType": {
+      "type": "string",
+      "valueString": "Supplies",
+      "confidence": 0.985
+    },
+    "Subtotal": {
+      "type": "currency",
+      "valueCurrency": {
+        "amount": 40.0,
+        "currencyCode": "USD"
+      },
+      "content": "40.00",
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            332,
+            388,
+            453,
+            388,
+            453,
+            430,
+            332,
+            430
+          ]
+        }
+      ],
+      "confidence": 0.995,
+      "spans": [
+        {
+          "offset": 62,
+          "length": 5
+        }
+      ]
+    },
+    "Total": {
+      "type": "currency",
+      "valueCurrency": {
+        "amount": 44.0,
+        "currencyCode": "USD"
+      },
+      "content": "44.00",
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            233,
+            526,
+            354,
+            527,
+            354,
+            568,
+            233,
+            568
+          ]
+        }
+      ],
+      "confidence": 0.995,
+      "spans": [
+        {
+          "offset": 83,
+          "length": 5
+        }
+      ]
+    },
+    "TotalTax": {
+      "type": "currency",
+      "valueCurrency": {
+        "amount": 4.0,
+        "currencyCode": "USD"
+      },
+      "content": "4.00",
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            172,
+            458,
+            266,
+            458,
+            266,
+            499,
+            172,
+            499
+          ]
+        }
+      ],
+      "confidence": 0.995,
+      "spans": [
+        {
+          "offset": 72,
+          "length": 4
+        }
+      ]
+    },
+    "TransactionDate": {
+      "type": "date",
+      "valueDate": "2026-11-02",
+      "content": "2026-11-02",
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            221,
+            181,
+            468,
+            181,
+            468,
+            224,
+            221,
+            224
+          ]
+        }
+      ],
+      "confidence": 0.995,
+      "spans": [
+        {
+          "offset": 29,
+          "length": 10
+        }
+      ]
+    }
+  }
+}
